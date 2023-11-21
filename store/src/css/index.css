@@ -1,27 +1,33 @@
 .header {
-  width: 100%;
   margin: 0 auto;
-}
-
-.header__nav {
   display: flex;
   justify-content: space-between;
-  align-content: baseline;
+  align-items: center;
+  padding: 1rem;
 }
 
-.nav__item {
-  display: inline;
-  margin-right: 2rem;
+.nav {
+  flex-grow: 1;
 }
 
-.nav__item__link {
-  margin-right: 4rem;
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.header__search {
+  height: 1.6875rem;
+  margin: 1.6875rem;
+  background: url("../assets/icons/search.svg") center no-repeat;
 }
 
 .header__cart {
   height: 1.6875rem;
   margin: 1.6875rem;
-  background: url(../assets/icons/cart.svg) center no-repeat;
+  background: url("../assets/icons/cart.svg") center no-repeat;
 }
 
 :root {

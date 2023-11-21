@@ -1,0 +1,79 @@
+@import "mixins";
+/*Normalize*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+$background-white: #ffffff;
+$text-dark: #000000;
+$text-light: #6d625a;
+$text-orange: #c55c10;
+$orange: #e5711d;
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.body {
+  margin: 0rem auto;
+  color: $text-dark;
+  background-color: $background-white;
+  overflow-x: hidden;
+}
+
+.header {
+  max-width: 94.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: baseline;
+}
+
+.nav__item {
+  display: inline;
+  margin-right: 2rem;
+}
+
+.nav__item__link {
+  margin-right: 4rem;
+}
+
+.header__bike-constructor {
+  display: flex;
+}
+
+.header__choosing-btn {
+  @include button(18.0431rem, 5.125rem, $orange);
+
+  // &:hover {
+
+  // }
+}

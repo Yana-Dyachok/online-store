@@ -1,0 +1,18 @@
+$background-white:#ffffff;
+
+@mixin button($w, $h, $c) {
+    width: $w;
+    height: $h;
+    font-size: 1.6875rem;
+    text-align: center;
+    color: $background-white;
+    background-color: $c;
+    border-radius: 0.625rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}

@@ -1,0 +1,33 @@
+@import 'mixins';
+
+$background-white: #ffffff;
+$text-dark: #000000;
+$text-light: #6d625a;
+$text-orange: #c55c10;
+$orange: #e5711d;
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+}
+
+.nav__item {
+    display: inline;
+    margin-right: 2rem;
+}
+
+.nav__item__link {
+    margin-right: 4rem;
+}
+
+.header__cart {
+    height: 1.6875rem;
+    margin: 1.6875rem;
+    background: url(../assets/icons/cart.svg) center no-repeat;
+}

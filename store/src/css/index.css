@@ -18,14 +18,30 @@
 
 .header__search {
   height: 1.6875rem;
-  margin: 1.6875rem;
+  width: 1.6875rem;
   background: url("../assets/icons/search.svg") center no-repeat;
 }
 
 .header__cart {
-  height: 1.6875rem;
-  margin: 1.6875rem;
+  height: 1.9875rem;
+  width: 1.6875rem;
   background: url("../assets/icons/cart.svg") center no-repeat;
+}
+
+.hero__choosing-btn {
+  width: 18.0431rem;
+  height: 5.125rem;
+  font-size: 1.6875rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #e5711d;
+  border-radius: 0.625rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+.hero__choosing-btn:hover {
+  transform: scale(1.05);
 }
 
 :root {

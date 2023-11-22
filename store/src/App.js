@@ -1,15 +1,15 @@
 import React from 'react';
-import Header from './Header';
-import Main from './Main';
-import Footer from './Footer';
+import Header from './utils/header/Header';
+import Main from './utils/main/Main';
+import Footer from './utils/footer/Footer';
 function App() {
-  return (
-    <div className="App">
-        <Header/>
-        <Main/>
-        <Footer/>
-      </div>
-  );
+    return (
+        <div className="App">
+            <Header />
+            <Main/>
+        {/* <Footer/> */}
+        </div>
+    );
 }
 
 export default App;

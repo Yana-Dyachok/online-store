@@ -1,4 +1,4 @@
-@import 'mixins';
+@import '../mixins.scss';
 
 $background-white: #ffffff;
 $text-dark: #000000;
@@ -26,12 +26,12 @@ $orange: #e5711d;
 
 .header__search {
     height: 1.6875rem;
-    margin: 1.6875rem;
+    width: 1.6875rem;
     background: url('../assets/icons/search.svg') center no-repeat;
 }
 
 .header__cart {
-    height: 1.6875rem;
-    margin: 1.6875rem;
+    height: 1.9875rem;
+    width: 1.6875rem;
     background: url('../assets/icons/cart.svg') center no-repeat;
 }

@@ -1,0 +1,8 @@
+$orange: #e5711d;
+.hero__choosing-btn {
+    @include button(18.0431rem, 5.125rem, $orange);
+  
+    // &:hover {
+  
+    // }
+  }

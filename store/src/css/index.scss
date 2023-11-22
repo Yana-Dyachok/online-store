@@ -1,3 +1,7 @@
 @import './header/_header';
 @import './main/main';
 @import '_reset';
+body {
+    display: flex;
+    flex-direction: column;
+}

@@ -5,7 +5,7 @@ export class Hero extends Component {
     return (
         <section className="hero-section">
         <div className="hero__text">
-          <h1 className="hero__description">Розкрий свій шлях</h1>
+          <h1 className="hero__title">Розкрий свій шлях</h1>
           <h2 className="hero__subtitle">
             Підбери велосипед, який створенний для твоїх досягнень!
           </h2>

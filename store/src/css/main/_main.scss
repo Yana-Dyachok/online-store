@@ -1,4 +1,9 @@
 $orange: #e5711d;
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 .hero__choosing-btn {
     @include button(18.0431rem, 5.125rem, $orange);
   
@@ -6,3 +11,9 @@ $orange: #e5711d;
   
     // }
   }
+
+.hero__img {
+  height: 48.3125rem;
+  width: 50.625rem;
+  background: url('../assets/img/bike-hero.svg') center no-repeat;
+}

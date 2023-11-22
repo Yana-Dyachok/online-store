@@ -11,7 +11,7 @@
 
 .nav__list {
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
 }
 
 .header__search {
@@ -28,6 +28,12 @@
   cursor: pointer;
 }
 
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .hero__choosing-btn {
   width: 18.0431rem;
   height: 5.125rem;
@@ -42,6 +48,12 @@
 }
 .hero__choosing-btn:hover {
   transform: scale(1.05);
+}
+
+.hero__img {
+  height: 48.3125rem;
+  width: 50.625rem;
+  background: url("../assets/img/bike-hero.svg") center no-repeat;
 }
 
 :root {
@@ -101,4 +113,9 @@ h3 {
   margin: 0;
   padding: 0;
   font-weight: 400;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=index.css.map */

@@ -18,8 +18,6 @@ $orange: #e5711d;
 }
 
 .nav__list {
-    padding: 0;
-    margin: 0;
     display: flex;
     gap: 1rem;
 }
@@ -28,10 +26,12 @@ $orange: #e5711d;
     height: 1.6875rem;
     width: 1.6875rem;
     background: url('../assets/icons/search.svg') center no-repeat;
+    cursor: pointer;
 }
 
 .header__cart {
     height: 1.9875rem;
-    width: 1.6875rem;
+    width: 1.9875rem;
     background: url('../assets/icons/cart.svg') center no-repeat;
+    cursor: pointer;
 }

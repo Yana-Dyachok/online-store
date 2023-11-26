@@ -31,8 +31,10 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
-            <button className="header__search"></button>
-            <button className="header__cart"></button>
+            <div className='header__actions actions'>
+            <button className="actions__btn actions__btn--search" type='button'></button>
+            <button className="actions__btn actions__btn--cart" type='button'></button>
+            </div>
         </header>
     );
 };

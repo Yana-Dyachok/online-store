@@ -8,10 +8,10 @@ export class BikeBuilder extends Component {
         <div className='bike-builder__container'>
             <div className='bike-builder__img'></div>
             <div className='bike-builder__parameters'>
-                <h3 className='parameters__title'>Тип велосипеда</h3>
-                <h3 className='parameters__title'>Зріст</h3>
-                <h3 className='parameters__title'>Діаметр колес</h3>
-                <button className='bike-builder__choosing-btn'>Підібрати</button>
+                <h3 className='bike-builder__name'>Тип велосипеда</h3>
+                <h3 className='bike-builder__name'>Зріст</h3>
+                <h3 className='bike-builder__name'>Діаметр колес</h3>
+                <button className='bike-builder-btn btn' type='button'>Підібрати</button>
             </div>
         </div>
       </section>

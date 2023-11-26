@@ -9,7 +9,7 @@ export class Hero extends Component {
           <h2 className="hero__subtitle">
             Підбери велосипед, який створенний для твоїх досягнень!
           </h2>
-          <button className="hero__choosing-btn">Підібрати</button>
+          <button className="hero__choosing-btn btn" type='button'>Підібрати</button>
         </div>
         <div className="hero__img">
         </div>

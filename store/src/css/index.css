@@ -56,6 +56,16 @@
   background: url("../assets/img/bike-hero.svg") center no-repeat;
 }
 
+.bike-builder__img {
+  height: 46.6875rem;
+  width: 37.9375rem;
+  background: url("../assets/img/bike-builder.svg") center no-repeat;
+}
+
+.bike-builder__container {
+  display: flex;
+}
+
 :root {
   box-sizing: border-box;
 }

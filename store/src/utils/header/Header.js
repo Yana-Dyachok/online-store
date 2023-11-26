@@ -31,8 +31,8 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
-            <div className="header__search"></div>
-            <div className="header__cart"></div>
+            <button className="header__search"></button>
+            <button className="header__cart"></button>
         </header>
     );
 };

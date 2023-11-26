@@ -1,6 +1,8 @@
+@import '_reset';
 @import './header/_header';
 @import './main/main';
-@import '_reset';
+@import './footer/_footer';
+
 body {
     display: flex;
     flex-direction: column;

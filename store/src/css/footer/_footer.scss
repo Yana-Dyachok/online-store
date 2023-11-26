@@ -1,0 +1,42 @@
+@import '../mixins.scss';
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__list {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__information {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+// не відображаються при пустому посиланні
+// .mail-icon {
+//     @include iconSise;
+//     background: url('../assets/icons/🦆\ icon\ _gmail_.svg') center no-repeat;
+// }
+
+// .facebook-icon {
+//     @include iconSise;
+//     background: url('../assets/icons/🦆\ icon\ _facebook_.svg') center no-repeat;
+// }
+
+// .instagram-icon {
+//     @include iconSise;
+//     background: url('../assets/icons/🦆\ icon\ _instagram\ 1_.svg') center
+//         no-repeat;
+// }
+
+// .telegram-icon {
+//     @include iconSise;
+//     background: url('../assets/icons/🦆\ icon\ _telegram_.svg') center no-repeat;
+// }

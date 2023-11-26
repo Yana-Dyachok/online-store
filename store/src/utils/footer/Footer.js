@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import mail from '../../../src/assets/icons/🦆\ icon\ _gmail_.svg';
-import facebook from '../../../src/assets/icons/🦆\ icon\ _facebook_.svg';
-import instagram from '../../../src/assets/icons/🦆\ icon\ _instagram\ 1_.svg';
-import telegram from '../../../src/assets/icons/🦆\ icon\ _telegram_.svg';
+import mail from '../../../src/assets/icons/gmail.svg';
+import facebook from '../../../src/assets/icons/facebook.svg';
+import instagram from '../../../src/assets/icons/instagram.svg';
+import telegram from '../../../src/assets/icons/telegram.svg';
 export class Footer extends Component {
   render() {
     return (

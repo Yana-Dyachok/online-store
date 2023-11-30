@@ -97,8 +97,22 @@ h3 {
   background: url("../assets/icons/cart.svg") center no-repeat;
 }
 
+.hero > .container {
+  flex-direction: row;
+}
+.hero__name {
+  color: #c55c10;
+}
+.hero__description {
+  font-family: "Roboto Slab", serif;
+  font-size: 4rem;
+}
+.hero__btn {
+  padding: 1rem 3rem;
+  background-color: #e5711d;
+}
 .hero__img {
-  width: 81.651rem;
+  width: 160rem;
   height: 80.1rem;
   background: url("../assets/img/bike-hero.jpg") center no-repeat;
 }
@@ -323,6 +337,10 @@ h3 {
 @font-face {
   font-family: "Kyiv*Type Serif";
   src: url("../assets/fonts/KyivTypeSerif-VarGX.ttf");
+}
+@font-face {
+  font-family: "Roboto Slab", serif;
+  src: url("../assets/fonts/RobotoSlab-Regular.ttf");
 }
 html {
   box-sizing: border-box;

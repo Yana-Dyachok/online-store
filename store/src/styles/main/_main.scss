@@ -11,10 +11,34 @@ $background-dark: #312e2c;
 
 // hero section--------------------------------------------------------------------------------------------------------
 
-.hero__img {
-    width: 81.651rem; //розміри згідно макету
-    height: 80.1rem;
-    background: url('../assets/img/bike-hero.jpg') center no-repeat;
+.hero {
+    & > .container {
+        flex-direction: row;
+    }
+
+    // &__text {
+
+    // }
+
+    &__name {
+        color: $text-orange;
+    }
+
+    &__description {
+        font-family: 'Roboto Slab', serif;
+        font-size: 4rem;
+    }
+
+    &__btn {
+        padding: 1rem 3rem;
+        background-color: $orange;
+    }
+
+    &__img {
+        width: 160rem; 
+        height: 80.1rem;
+        background: url('../assets/img/bike-hero.jpg') center no-repeat;
+    }
 }
 
 //bike builder section-------------------------------------------------------------------------------------------------------

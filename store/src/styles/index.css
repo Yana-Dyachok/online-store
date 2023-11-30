@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   box-sizing: border-box;
 }
@@ -57,6 +58,8 @@ h3 {
   font-weight: 400;
 }
 
+/*SCSS-змінні*/
+/*SCSS-змінні*/
 .header > .container {
   flex-direction: row;
   justify-content: space-between;
@@ -97,6 +100,7 @@ h3 {
   background: url("../assets/icons/cart.svg") center no-repeat;
 }
 
+/*SCSS-змінні*/
 .hero > .container {
   flex-direction: row;
 }
@@ -104,7 +108,7 @@ h3 {
   color: #c55c10;
 }
 .hero__description {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab";
   font-size: 4rem;
 }
 .hero__btn {
@@ -294,6 +298,7 @@ h3 {
   height: 40rem;
 }
 
+/*SCSS-змінні*/
 .footer {
   background-color: #e5711d;
 }
@@ -331,16 +336,25 @@ h3 {
 }
 
 @font-face {
-  font-family: "Roboto Condensed", sans-serif;
-  src: url("../assets/fonts/RobotoCondensed-Regular.ttf");
+  font-family: "Roboto Condensed";
+  src: url("../assets/fonts/RobotoCondensed-Regular.woff") format("woff"), url("../assets/fonts/RobotoCondensed-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Kyiv*Type Serif";
-  src: url("../assets/fonts/KyivTypeSerif-VarGX.ttf");
+  font-family: "Kyiv Type Serif";
+  src: url("../assets/fonts/KyivTypeSerif-Medium.woff") format("woff"), url("../assets/fonts/KyivTypeSerif-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Roboto Slab", serif;
-  src: url("../assets/fonts/RobotoSlab-Regular.ttf");
+  font-family: "Roboto Slab";
+  src: url("../assets/fonts/RobotoSlab-Regular.woff") format("woff"), url("../assets/fonts/RobotoSlab-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 html {
   box-sizing: border-box;
@@ -350,11 +364,8 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed";
   font-size: 2.4rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   color: #000000;
 }
 
@@ -368,9 +379,8 @@ body {
 }
 
 .titles {
-  font-family: "Kyiv*Type Serif";
+  font-family: "Kyiv Type Serif";
   font-size: 6rem;
-  font-weight: 500;
   text-align: center;
 }
 

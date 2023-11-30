@@ -5,7 +5,9 @@ export class BikeBuilder extends Component {
         return (
             <section id="bike-builder">
                 <div className="container">
-                    <h2 className="bike-builder__title titles">Підбір велосипеда</h2>
+                    <h2 className="bike-builder__title titles">
+                        Підбір велосипеда
+                    </h2>
                     <div className="bike-builder__inner">
                         <div className="bike-builder__img"></div>
                         <div className="bike-builder__parameters">
@@ -18,7 +20,7 @@ export class BikeBuilder extends Component {
                                         <input
                                             type="radio"
                                             id="bike-type-one"
-                                            name="bike"
+                                            name="bike-type-one"
                                             value="bike-one"
                                         />
                                         <label
@@ -32,7 +34,7 @@ export class BikeBuilder extends Component {
                                         <input
                                             type="radio"
                                             id="bike-type-two"
-                                            name="bike"
+                                            name="bike-type-two"
                                             value="bike-two"
                                         />
                                         <label
@@ -47,7 +49,7 @@ export class BikeBuilder extends Component {
                                         <input
                                             type="radio"
                                             id="bike-type-three"
-                                            name="bike"
+                                            name="bike-type-three"
                                             value="bike-three"
                                         />
                                         <label
@@ -62,7 +64,7 @@ export class BikeBuilder extends Component {
                                         <input
                                             type="radio"
                                             id="bike-type-four"
-                                            name="bike"
+                                            name="bike-type-four"
                                             value="bike-four"
                                         />
                                         <label
@@ -82,7 +84,7 @@ export class BikeBuilder extends Component {
                                         <input
                                             type="radio"
                                             id="height-one"
-                                            name="height"
+                                            name="height-one"
                                             value="height-one"
                                         />
                                         <label
@@ -96,7 +98,7 @@ export class BikeBuilder extends Component {
                                         <input
                                             type="radio"
                                             id="height-two"
-                                            name="height"
+                                            name="height-two"
                                             value="height-two"
                                         />
                                         <label
@@ -111,7 +113,7 @@ export class BikeBuilder extends Component {
                                         <input
                                             type="radio"
                                             id="height-three"
-                                            name="height"
+                                            name="height-three"
                                             value="height-three"
                                         />
                                         <label
@@ -132,8 +134,8 @@ export class BikeBuilder extends Component {
                                     <div className="bike-builder__item btn">
                                         <input
                                             type="radio"
-                                            id="wheel-diameterone"
-                                            name="wheel-diameter"
+                                            id="wheel-diameter-one"
+                                            name="wheel-diameter-one"
                                             value="-wheel-diameterone"
                                         />
                                         <label
@@ -147,7 +149,7 @@ export class BikeBuilder extends Component {
                                         <input
                                             type="radio"
                                             id="wheel-diameter-two"
-                                            name="wheel-diameter"
+                                            name="wheel-diameter-two"
                                             value="wheel-diameter-two"
                                         />
                                         <label
@@ -162,7 +164,7 @@ export class BikeBuilder extends Component {
                                         <input
                                             type="radio"
                                             id="wheel-diameter-three"
-                                            name="wheel-diameter"
+                                            name="wheel-diameter-three"
                                             value="wheel-diameter-three"
                                         />
                                         <label

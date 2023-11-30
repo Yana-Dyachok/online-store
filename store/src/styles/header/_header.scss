@@ -1,0 +1,57 @@
+@import '../mixins.scss';
+
+$text-light: #6d625a;
+
+.header {
+    & > .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+// .logo {
+// }
+.nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    &__list {
+        display: flex;
+        gap: 4rem;
+        list-style: none;
+        margin: 0;
+    }
+
+    // &__item {
+    // }
+
+    &__link {
+        font-size: 2.7rem;
+        color: $text-light;
+    }
+}
+
+.actions {
+    &__btn {
+        cursor: pointer;
+    }
+
+    &__btn--search {
+        height: 3.2rem;
+        width: 3.2rem;
+        background: url('../assets/icons/search.svg') center no-repeat;
+    }
+
+    &__btn--cart {
+        height: 3.2rem;
+        width: 3.2rem;
+        background: url('../assets/icons/cart.svg') center no-repeat;
+    }
+}

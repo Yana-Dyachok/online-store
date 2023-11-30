@@ -1,0 +1,224 @@
+@import '../mixins.scss';
+
+$background-white: #ffffff;
+$text-dark: #000000;
+$text-light: #6d625a;
+$text-orange: #c55c10;
+$btn-color: #877a71;
+$orange: #e5711d;
+$background-gradient: #554d47;
+$background-dark: #312e2c;
+
+// hero section--------------------------------------------------------------------------------------------------------
+
+.hero__img {
+    width: 81.651rem; //розміри згідно макету
+    height: 80.1rem;
+    background: url('../assets/img/bike-hero.jpg') center no-repeat;
+}
+
+//bike builder section-------------------------------------------------------------------------------------------------------
+#bike-builder {
+    background: radial-gradient(circle, $background-gradient, $background-dark);
+}
+
+.bike-builder {
+    &__title {
+        color: $background-white;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__img {
+        height: 65rem;
+        width: 65rem;
+        background: url('../assets/img/bike-builder.png') center no-repeat;
+    }
+
+    &__parameters {
+        @include centerPosition;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__name {
+        font-size: 2.7rem;
+        color: $background-white;
+    }
+
+    &__buttons {
+        & > form {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+    &__item {
+        padding: 1rem;
+        background-color: $btn-color;
+    }
+
+    // &__label {
+    // }
+
+    &__btn {
+        padding: 1rem;
+        background-color: $orange;
+    }
+}
+
+//bike slider-----------------------------------------------------------------------------------------------------------
+.bike-slider {
+    // &__title {
+    // }
+
+    &__inner {
+        @include centerPosition;
+        align-items: center;
+    }
+
+    &__btn {
+        @include btnSliderSize;
+    }
+    &__container {
+        //temporary
+        width: 80rem;
+        height: 40rem;
+    }
+}
+
+.bike-slider--prev {
+    background: url('../assets/icons/slider-btn-prev.svg') center no-repeat;
+}
+
+.bike-slider--next {
+    background: url('../assets/icons/slider-btn-next.svg') center no-repeat;
+}
+
+//why us section --------------------------------------------------------------------------------------------------------
+
+// .why-us__title {
+// }
+.why-us__wrapper {
+    display: flex;
+}
+// .why-us__column {
+// }
+// .benefits {
+// }
+// .benefits__item {
+// }
+// .benefits__name {
+// }
+// .benefits__text {
+// }
+// .why-us__img {
+// }
+
+.why-us {
+    & > .container {
+        justify-content: space-between;
+    }
+
+    // &__title {
+
+    // }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // &__column {
+    // }
+
+    &__img {
+        width: 65rem;
+        height: 38.4rem;
+        background: url('../assets/img/why-us-bike-img.jpg') center no-repeat;
+    }
+}
+
+.benefits {
+    padding: 0;
+    &__item {
+        padding-left: 7rem;
+        position: relative;
+        margin-bottom: 1rem;
+
+        &:nth-child(1):before {
+            content: url('../assets/icons/why-us-one.svg');
+            @include benefitsIcon;
+        }
+
+        &:nth-child(2):before {
+            content: url('../assets/icons/why-us-two.svg');
+            @include benefitsIcon;
+        }
+
+        &:nth-child(3):before {
+            content: url('../assets/icons/why-us-three.svg');
+            @include benefitsIcon;
+        }
+
+        &--second {
+            &:nth-child(1):before {
+                content: url('../assets/icons/why-us-four.svg');
+                @include benefitsIcon;
+            }
+
+            &:nth-child(2):before {
+                content: url('../assets/icons/why-us-five.svg');
+                @include benefitsIcon;
+            }
+
+            &:nth-child(3):before {
+                content: url('../assets/icons/why-us-six.svg');
+                @include benefitsIcon;
+            }
+        }
+    }
+
+    &__name {
+        font-size: 2.7rem;
+    }
+
+    &__text {
+        color: $background-gradient;
+    }
+}
+
+//reviews---------------------------------------------------------------------------------------------------------------------
+.reviews {
+    // &__title {
+    // }
+
+    // &__slider {
+    // }
+
+    &-btn--prev {
+        background: url('../assets/icons/slider-btn-prev.svg') center no-repeat;
+    }
+
+    &-btn--next {
+        background: url('../assets/icons/slider-btn-next.svg') center no-repeat;
+    }
+}
+
+.slider {
+    @include centerPosition;
+    align-items: center;
+
+    &__btn {
+        @include btnSliderSize;
+    }
+
+    &__container {
+        //temporary
+        width: 60rem;
+        height: 40rem;
+    }
+}

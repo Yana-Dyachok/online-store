@@ -1,0 +1,62 @@
+@import '../mixins.scss';
+
+.footer {
+
+    background-color: $orange;
+    & > .container {
+        flex-direction: column;
+        padding: 2rem 0rem;
+    }
+  
+    &__information {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 2rem;
+    }
+
+    &__column {
+        color: $background-white;
+    }
+
+    &__name {
+        font-size: 3.2rem;
+    }
+
+    // &__list {
+    // }
+
+    // &__item {
+    // }
+
+    &__link {
+        font-size: 2.7rem;
+    }
+
+    &__data {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__copy-right {
+        grid-row: 2;
+        font-size: 2.7rem;
+        color: $background-gradient;
+    }
+
+    // &__contacts {
+    // }
+}
+
+.contacts {
+
+    &__list {
+        display: flex;
+        gap: 2rem;
+    }
+    // &__item {
+    // }
+    // &__link {
+    
+    // }
+}
+

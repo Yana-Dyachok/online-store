@@ -27,7 +27,7 @@ const Header = () => {
                         </li>
                         <li className="nav__item">
                             <a className="nav__link" href="#">
-                                Служба підтримки
+                                Підтримка
                             </a>
                         </li>
                     </ul>

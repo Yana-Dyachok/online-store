@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import BikeSliderItem from './BikeSliderItem';
 
 export class BikeSlider extends Component {
     render() {
@@ -12,7 +13,15 @@ export class BikeSlider extends Component {
                             type="button"
                         ></button>
                         <div className="bike-slider__container">
-                            <div class="bike-slider__line"></div>
+                            <div class="bike-slider__line">
+                                <BikeSliderItem/>
+                                <BikeSliderItem/>
+                                <BikeSliderItem/>
+                                <BikeSliderItem/>
+                                <BikeSliderItem/>
+                                <BikeSliderItem/>
+                                <BikeSliderItem/>
+                            </div>
                         </div>
                         <button
                             className="bike-slider__btn bike-slider--next"

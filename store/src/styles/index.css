@@ -118,7 +118,7 @@ h3 {
 .hero__img {
   width: 160rem;
   height: 80.1rem;
-  background: url("../assets/img/bike-hero.jpg") center no-repeat;
+  background: url("../assets/img/bike-hero.jpg") center/contain no-repeat;
 }
 
 #bike-builder {
@@ -172,8 +172,16 @@ h3 {
   height: 3rem;
 }
 .bike-slider__container {
-  width: 80rem;
-  height: 40rem;
+  max-width: 119.3rem;
+  height: 35.5rem;
+  position: relative;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+.bike-slider__line {
+  width: 500rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .bike-slider--prev {
@@ -182,6 +190,16 @@ h3 {
 
 .bike-slider--next {
   background: url("../assets/icons/slider-btn-next.svg") center no-repeat;
+}
+
+.bike-slider__item {
+  width: 28rem;
+  height: 35.5rem;
+  border-radius: 2rem;
+}
+.bike-slider__price {
+  font-size: 2.7rem;
+  color: #e5711d;
 }
 
 .why-us__wrapper {

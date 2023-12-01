@@ -1,6 +1,5 @@
 @import '../mixins.scss';
-
-$text-light: #6d625a;
+@import '../_colors';
 
 .header {
     & > .container {

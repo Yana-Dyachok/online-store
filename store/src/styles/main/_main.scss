@@ -1,13 +1,5 @@
 @import '../mixins.scss';
-
-$background-white: #ffffff;
-$text-dark: #000000;
-$text-light: #6d625a;
-$text-orange: #c55c10;
-$btn-color: #877a71;
-$orange: #e5711d;
-$background-gradient: #554d47;
-$background-dark: #312e2c;
+@import '../_colors';
 
 // hero section--------------------------------------------------------------------------------------------------------
 
@@ -300,8 +292,8 @@ $background-dark: #312e2c;
     }
 
     &__stars {
-        width: 12.5rem; 
-        height: 2.5rem; 
+        width: 12.5rem;
+        height: 2.5rem;
         background: url('../assets/icons/star.svg') repeat-x;
     }
 

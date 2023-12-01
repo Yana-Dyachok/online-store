@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
 import imgItem from '../../../src/assets/img/slider-img.jpg';
-export class ReviewsSliderItem extends Component {
-  render() {
+
+const ReviewsSliderItem = () => {
     return (
         <li className='slider__item'>
            <img className='slider__img' src={imgItem} alt="photo" width="199" height="200"/>
@@ -12,7 +11,6 @@ export class ReviewsSliderItem extends Component {
            </div>
         </li>
     )
-  }
 }
 
 export default ReviewsSliderItem

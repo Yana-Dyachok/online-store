@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
 import Hero from './Hero';
 import BikeBuilder from './BikeBuilder';
 import BikeSlider from './BikeSlider';
 import WhyUs from './WhyUs';
 import Reviews from './Reviews';
 
-export class Main extends Component {
-    render() {
+const Main = () => {
         return (
             <main>
                 <Hero />;
@@ -16,7 +14,6 @@ export class Main extends Component {
                 <Reviews />;
             </main>
         );
-    }
 }
 
 export default Main;

@@ -1,7 +1,4 @@
-import React, { Component } from 'react';
-
-export class BikeBuilder extends Component {
-    render() {
+const BikeBuilder = () => {
         return (
             <section id="bike-builder">
                 <div className="container">
@@ -188,7 +185,6 @@ export class BikeBuilder extends Component {
                 </div>
             </section>
         );
-    }
 }
 
 export default BikeBuilder;

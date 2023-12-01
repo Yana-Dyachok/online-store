@@ -17,7 +17,7 @@ export class Footer extends Component {
                             <h3 className="footer__name">Велосипеди</h3>
                             <ul className="footer__list">
                                 <li className="footer__item">
-                                    <a className="footer__link" href="">
+                                    <a className="footer__list" href="">
                                         Види велосипедів
                                     </a>
                                 </li>
@@ -38,7 +38,7 @@ export class Footer extends Component {
                         </div>
                         <div className="footer__column">
                             <h3 className="footer__name">Інформація</h3>
-                            <ul className="footer__link">
+                            <ul className="footer__list">
                                 <li className="footer__item">
                                     <a className="footer__link" href="">
                                         Про нас
@@ -52,7 +52,7 @@ export class Footer extends Component {
                         </div>
                         <div className="footer__column">
                             <h3 className="footer__name">Клієнтам</h3>
-                            <ul className="footer__link">
+                            <ul className="footer__list">
                                 <li className="footer__item">
                                     <a className="footer__link" href="">
                                         Доставка
@@ -70,6 +70,38 @@ export class Footer extends Component {
                                 <li className="footer__item">
                                     <a className="footer__link" href=""></a>
                                     Повернення
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="footer__column">
+                            <ul className="footer__list">
+                                <li className="footer__item">
+                                    <a
+                                        className="footer__tel"
+                                        href="tel:044 500 70 50"
+                                    >
+                                        044 500 70 50
+                                    </a>
+                                    <p className="footer__details">
+                                        Оформлення замовлення:
+                                    </p>
+                                    <p className="footer__details">
+                                        9:00-21:00
+                                    </p>
+                                </li>
+                                <li className="footer__item">
+                                    <a
+                                        className="footer__tel"
+                                        href="tel:044 500 80 60"
+                                    >
+                                        044 500 80 60
+                                    </a>
+                                    <p className="footer__details">
+                                        Служба підтримки:
+                                    </p>
+                                    <p className="footer__details">
+                                        Цілодобово
+                                    </p>
                                 </li>
                             </ul>
                         </div>
@@ -156,17 +188,16 @@ export class Footer extends Component {
                                         <img
                                             src={masterCard}
                                             alt="master-card"
-                                            width="30"
+                                            width="75"
                                             height="30"
                                         />
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        
                     </div>
                     <a className="footer__copy-right" href="#">
-                            &copy;2023 BraveWheel
+                        &copy;2023 BraveWheel
                     </a>
                 </div>
             </footer>

@@ -382,6 +382,11 @@ h3 {
   gap: 2rem;
 }
 
+.cards__list {
+  display: flex;
+  gap: 2rem;
+}
+
 @font-face {
   font-family: "Roboto Condensed";
   src: url("../assets/fonts/RobotoCondensed-Regular.woff") format("woff"), url("../assets/fonts/RobotoCondensed-Regular.woff2") format("woff2");

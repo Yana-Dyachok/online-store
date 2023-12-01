@@ -42,12 +42,22 @@
         font-size: 2.7rem;
         color: $background-gradient;
     }
-
-    // &__contacts {
-    // }
 }
 
 .contacts {
+
+    &__list {
+        display: flex;
+        gap: 2rem;
+    }
+    // &__item {
+    // }
+    // &__link {
+    
+    // }
+}
+
+.cards {
 
     &__list {
         display: flex;

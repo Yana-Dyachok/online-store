@@ -3,6 +3,10 @@ import mail from '../../../src/assets/icons/gmail.svg';
 import facebook from '../../../src/assets/icons/facebook.svg';
 import instagram from '../../../src/assets/icons/instagram.svg';
 import telegram from '../../../src/assets/icons/telegram.svg';
+import googlePay from '../../../src/assets/icons/google-pay.svg';
+import applePay from '../../../src/assets/icons/apple-pay.svg';
+import visa from '../../../src/assets/icons/visa.svg';
+import masterCard from '../../../src/assets/icons/master-card.svg';
 export class Footer extends Component {
     render() {
         return (
@@ -71,9 +75,6 @@ export class Footer extends Component {
                         </div>
                     </div>
                     <div className="footer__data">
-                        <a className="footer__copy-right" href="#">
-                            &copy;2023 BraveWheel
-                        </a>
                         <address className="footer__contacts contacts">
                             <ul className="contacts__list">
                                 <li className="contacts__item">
@@ -111,14 +112,62 @@ export class Footer extends Component {
                                         <img
                                             src={telegram}
                                             alt="telegram"
-                                            width="30"
+                                            width="75"
                                             height="30"
                                         />
                                     </a>
                                 </li>
                             </ul>
                         </address>
+                        <div className="footer__cards cards">
+                            <ul className="cards__list">
+                                <li className="cards__item">
+                                    <a className="cards__link" href="#">
+                                        <img
+                                            src={googlePay}
+                                            alt="google-pay"
+                                            width="75"
+                                            height="30"
+                                        />
+                                    </a>
+                                </li>
+                                <li className="cards__item">
+                                    <a className="cards__link" href="#">
+                                        <img
+                                            src={applePay}
+                                            alt="apple-pay"
+                                            width="75"
+                                            height="30"
+                                        />
+                                    </a>
+                                </li>
+                                <li className="cards__item">
+                                    <a className="cards__link" href="#">
+                                        <img
+                                            src={visa}
+                                            alt="visa"
+                                            width="75"
+                                            height="30"
+                                        />
+                                    </a>
+                                </li>
+                                <li className="cards__item">
+                                    <a className="cards__link" href="#">
+                                        <img
+                                            src={masterCard}
+                                            alt="master-card"
+                                            width="30"
+                                            height="30"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
                     </div>
+                    <a className="footer__copy-right" href="#">
+                            &copy;2023 BraveWheel
+                    </a>
                 </div>
             </footer>
         );

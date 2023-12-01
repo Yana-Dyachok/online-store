@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import ReviewsSliderItem from './ReviewsSliderItem';
 export class Reviews extends Component {
     render() {
         return (
@@ -9,7 +9,13 @@ export class Reviews extends Component {
                     <div className="reviews__slider slider">
                         <button className="slider__btn reviews-btn--prev" type='button'></button>
                         <div className="slider__container">
-                            <div class="slider__line"></div>
+                            <ul class="slider__list">
+                                <ReviewsSliderItem/>
+                                <ReviewsSliderItem/>
+                                <ReviewsSliderItem/>
+                                <ReviewsSliderItem/>
+                                <ReviewsSliderItem/>
+                            </ul>
                         </div>
                         <button className="slider__btn reviews-btn--next" type='button'></button>
                     </div>

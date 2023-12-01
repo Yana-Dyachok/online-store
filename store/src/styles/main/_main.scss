@@ -34,7 +34,7 @@ $background-dark: #312e2c;
     }
 
     &__img {
-        width: 160rem; 
+        width: 160rem;
         height: 80.1rem;
         background: url('../assets/img/bike-hero.jpg') center/contain no-repeat;
     }
@@ -112,12 +112,12 @@ $background-dark: #312e2c;
         max-width: 119.3rem;
         height: 35.5rem;
         position: relative;
-        padding: 0  1rem;
+        padding: 0 1rem;
         overflow: hidden;
     }
 
-    &__line  {
-        width: 500rem;//temporary
+    &__list {
+        width: 500rem; //temporary
         display: flex;
         gap: 2rem;
     }
@@ -133,7 +133,6 @@ $background-dark: #312e2c;
 
 // bike slider item----------------------------------------------------------------------------------------------------
 .bike-slider {
-
     &__item {
         width: 28rem;
         height: 35.5rem;
@@ -146,13 +145,11 @@ $background-dark: #312e2c;
     // &__name {
     // }
 
-
     &__price {
         font-size: 2.7rem;
         color: $orange;
     }
 }
-
 
 //why us section --------------------------------------------------------------------------------------------------------
 
@@ -274,7 +271,42 @@ $background-dark: #312e2c;
 
     &__container {
         //temporary
-        width: 60rem;
-        height: 40rem;
+        width: 121.3rem;
+        height: 22rem;
+        position: relative;
+        padding: 0 1rem;
+        overflow: hidden;
+    }
+
+    &__list {
+        width: 500rem; //temporary
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__item {
+        width: 59.153rem;
+        height: 20rem;
+        display: flex;
+    }
+
+    &__text {
+        border: 0.1rem solid $text-light;
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    &__name {
+        font-size: 2.7rem;
+    }
+
+    &__stars {
+        width: 12.5rem; 
+        height: 2.5rem; 
+        background: url('../assets/icons/star.svg') repeat-x;
+    }
+
+    &__description {
+        font-size: 2.7rem;
+        color: $background-gradient;
     }
 }

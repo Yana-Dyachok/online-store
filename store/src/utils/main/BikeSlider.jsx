@@ -13,7 +13,7 @@ export class BikeSlider extends Component {
                             type="button"
                         ></button>
                         <div className="bike-slider__container">
-                            <div class="bike-slider__line">
+                            <ul class="bike-slider__line"> 
                                 <BikeSliderItem/>
                                 <BikeSliderItem/>
                                 <BikeSliderItem/>
@@ -21,7 +21,7 @@ export class BikeSlider extends Component {
                                 <BikeSliderItem/>
                                 <BikeSliderItem/>
                                 <BikeSliderItem/>
-                            </div>
+                            </ul>
                         </div>
                         <button
                             className="bike-slider__btn bike-slider--next"

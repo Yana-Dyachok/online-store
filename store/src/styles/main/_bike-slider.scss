@@ -1,0 +1,59 @@
+@import '../mixins';
+@import '../_colors';
+//bike slider-----------------------------------------------------------------------------------------------------------
+.bike-slider {
+    // &__title {
+    // }
+
+    &__inner {
+        @include centerPosition;
+        align-items: center;
+    }
+
+    &__btn {
+        @include btnSliderSize;
+    }
+
+    &__container {
+        //temporary
+        max-width: 119.3rem;
+        height: 35.5rem;
+        position: relative;
+        padding: 0 1rem;
+        overflow: hidden;
+    }
+
+    &__list {
+        width: 500rem; //temporary
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.bike-slider--prev {
+    background: url('../assets/icons/slider-btn-prev.svg') center no-repeat;
+}
+
+.bike-slider--next {
+    background: url('../assets/icons/slider-btn-next.svg') center no-repeat;
+}
+
+// bike slider item----------------------------------------------------------------------------------------------------
+.bike-slider {
+    &__item {
+        width: 28rem;
+        height: 35.5rem;
+        border-radius: 2rem;
+    }
+
+    // &__img {
+    // }
+
+    // &__name {
+    // }
+
+    &__price {
+        font-size: 2.7rem;
+        color: $orange;
+    }
+}

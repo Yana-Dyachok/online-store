@@ -1,0 +1,94 @@
+@import '../mixins';
+@import '../_colors';
+//why us section --------------------------------------------------------------------------------------------------------
+
+// .why-us__title {
+// }
+.why-us__wrapper {
+    display: flex;
+}
+// .why-us__column {
+// }
+// .benefits {
+// }
+// .benefits__item {
+// }
+// .benefits__name {
+// }
+// .benefits__text {
+// }
+// .why-us__img {
+// }
+
+.why-us {
+    & > .container {
+        justify-content: space-between;
+    }
+
+    // &__title {
+
+    // }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // &__column {
+    // }
+
+    &__img {
+        width: 65rem;
+        height: 38.4rem;
+        background: url('../assets/img/why-us-bike-img.jpg') center no-repeat;
+    }
+}
+
+.benefits {
+    padding: 0;
+    &__item {
+        padding-left: 7rem;
+        position: relative;
+        margin-bottom: 1rem;
+
+        &:nth-child(1):before {
+            content: url('../assets/icons/why-us-one.svg');
+            @include benefitsIcon;
+        }
+
+        &:nth-child(2):before {
+            content: url('../assets/icons/why-us-two.svg');
+            @include benefitsIcon;
+        }
+
+        &:nth-child(3):before {
+            content: url('../assets/icons/why-us-three.svg');
+            @include benefitsIcon;
+        }
+
+        &--second {
+            &:nth-child(1):before {
+                content: url('../assets/icons/why-us-four.svg');
+                @include benefitsIcon;
+            }
+
+            &:nth-child(2):before {
+                content: url('../assets/icons/why-us-five.svg');
+                @include benefitsIcon;
+            }
+
+            &:nth-child(3):before {
+                content: url('../assets/icons/why-us-six.svg');
+                @include benefitsIcon;
+            }
+        }
+    }
+
+    &__name {
+        font-size: 2.7rem;
+    }
+
+    &__text {
+        color: $background-gradient;
+    }
+}

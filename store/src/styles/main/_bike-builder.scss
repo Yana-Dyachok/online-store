@@ -1,0 +1,55 @@
+@import '../mixins';
+@import '../_colors';
+
+//bike builder section-------------------------------------------------------------------------------------------------------
+#bike-builder {
+    background: radial-gradient(circle, $background-gradient, $background-dark);
+}
+
+.bike-builder {
+    &__title {
+        color: $background-white;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__img {
+        height: 65rem;
+        width: 65rem;
+        background: url('../assets/img/bike-builder.png') center no-repeat;
+    }
+
+    &__parameters {
+        @include centerPosition;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__name {
+        font-size: 2.7rem;
+        color: $background-white;
+    }
+
+    &__buttons {
+        & > form {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+    &__item {
+        padding: 1rem;
+        background-color: $btn-color;
+    }
+
+    // &__label {
+    // }
+
+    &__btn {
+        padding: 1rem;
+        background-color: $orange;
+    }
+}

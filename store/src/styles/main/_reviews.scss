@@ -1,0 +1,68 @@
+@import '../mixins';
+@import '../_colors';
+//reviews---------------------------------------------------------------------------------------------------------------------
+.reviews {
+    // &__title {
+    // }
+
+    // &__slider {
+    // }
+
+    &-btn--prev {
+        background: url('../assets/icons/slider-btn-prev.svg') center no-repeat;
+    }
+
+    &-btn--next {
+        background: url('../assets/icons/slider-btn-next.svg') center no-repeat;
+    }
+}
+
+.slider {
+    @include centerPosition;
+    align-items: center;
+
+    &__btn {
+        @include btnSliderSize;
+    }
+
+    &__container {
+        //temporary
+        width: 121.3rem;
+        height: 22rem;
+        position: relative;
+        padding: 0 1rem;
+        overflow: hidden;
+    }
+
+    &__list {
+        width: 500rem; //temporary
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__item {
+        width: 59.153rem;
+        height: 20rem;
+        display: flex;
+    }
+
+    &__text {
+        border: 0.1rem solid $text-light;
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    &__name {
+        font-size: 2.7rem;
+    }
+
+    &__stars {
+        width: 12.5rem;
+        height: 2.5rem;
+        background: url('../assets/icons/star.svg') repeat-x;
+    }
+
+    &__description {
+        font-size: 2.7rem;
+        color: $background-gradient;
+    }
+}

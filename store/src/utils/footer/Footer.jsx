@@ -1,22 +1,13 @@
-import mail from '../../../src/assets/icons/gmail.svg';
-import facebook from '../../../src/assets/icons/facebook.svg';
-import instagram from '../../../src/assets/icons/instagram.svg';
-import telegram from '../../../src/assets/icons/telegram.svg';
-import googlePay from '../../../src/assets/icons/google-pay.svg';
-import applePay from '../../../src/assets/icons/apple-pay.svg';
-import visa from '../../../src/assets/icons/visa.svg';
-import masterCard from '../../../src/assets/icons/master-card.svg';
-
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="container">
+            <div className="footer__inner container">
                 <div className="footer__information">
                     <div className="footer__column">
                         <h3 className="footer__name">Велосипеди</h3>
                         <ul className="footer__list">
                             <li className="footer__item">
-                                <a className="footer__list" href="">
+                                <a className="footer__link" href="">
                                     Види велосипедів
                                 </a>
                             </li>
@@ -72,7 +63,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="footer__column">
+                    <address className="footer__column">
                         <ul className="footer__list">
                             <li className="footer__item">
                                 <a
@@ -99,99 +90,43 @@ const Footer = () => {
                                 <p className="footer__details">Цілодобово</p>
                             </li>
                         </ul>
-                    </div>
+                    </address>
                 </div>
                 <div className="footer__data">
                     <address className="footer__contacts contacts">
                         <ul className="contacts__list">
                             <li className="contacts__item">
-                                <a className="contacts__link" href="#">
-                                    <img
-                                        src={mail}
-                                        alt="mail"
-                                        width="30"
-                                        height="30"
-                                    />
-                                </a>
+                                <a className="contacts__link contacts__link--mail" href="#"></a>
                             </li>
                             <li className="contacts__item">
-                                <a className="contacts__link" href="#">
-                                    <img
-                                        src={facebook}
-                                        alt="facebook"
-                                        width="30"
-                                        height="30"
-                                    />
-                                </a>
+                                <a className="contacts__link contacts__link--facebook" href="#"></a>
                             </li>
                             <li className="contacts__item">
-                                <a className="contacts__link" href="#">
-                                    <img
-                                        src={instagram}
-                                        alt="instagram"
-                                        width="30"
-                                        height="30"
-                                    />
-                                </a>
+                                <a className="contacts__link contacts__link--instagram" href="#"></a>
                             </li>
                             <li className="contacts__item">
-                                <a className="contacts__link" href="#">
-                                    <img
-                                        src={telegram}
-                                        alt="telegram"
-                                        width="75"
-                                        height="30"
-                                    />
-                                </a>
+                                <a className="contacts__link contacts__link--telegram" href="#"></a>
                             </li>
                         </ul>
                     </address>
-                    <div className="footer__cards cards">
-                        <ul className="cards__list">
-                            <li className="cards__item">
-                                <a className="cards__link" href="#">
-                                    <img
-                                        src={googlePay}
-                                        alt="google-pay"
-                                        width="75"
-                                        height="30"
-                                    />
-                                </a>
+                    <div className="footer__cards payment-methods">
+                        <ul className="payment-methods__list">
+                            <li className="payment-methods__item">
+                                <a className="payment-methods__link  payment-methods__link--google" href="#"></a>
                             </li>
-                            <li className="cards__item">
-                                <a className="cards__link" href="#">
-                                    <img
-                                        src={applePay}
-                                        alt="apple-pay"
-                                        width="75"
-                                        height="30"
-                                    />
-                                </a>
+                            <li className="payment-methods__item">
+                                <a className="payment-methods__link payment-methods__link--apple" href="#"></a>
                             </li>
-                            <li className="cards__item">
-                                <a className="cards__link" href="#">
-                                    <img
-                                        src={visa}
-                                        alt="visa"
-                                        width="75"
-                                        height="30"
-                                    />
-                                </a>
+                            <li className="payment-methods__item">
+                                <a className="payment-methods__link payment-methods__link--visa" href="#"></a>
                             </li>
-                            <li className="cards__item">
-                                <a className="cards__link" href="#">
-                                    <img
-                                        src={masterCard}
-                                        alt="master-card"
-                                        width="75"
-                                        height="30"
-                                    />
-                                </a>
+                            <li className="payment-methods__item">
+                                <a className="payment-methods__link payment-methods__link--master" href="#"></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <a className="footer__copy-right" href="#">
+                <a className="footer__copyright" href="#">
                     &copy;2023 BraveWheel
                 </a>
             </div>

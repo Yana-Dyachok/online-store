@@ -3,11 +3,11 @@ import BikeSliderItem from './BikeSliderItem';
 const BikeSlider = () => {
     return (
         <section className="bike-slider">
-            <div className="container">
-                <h3 className="bike-slider__title titles">Рекомендації</h3>
-                <div className="bike-slider__inner">
+            <div className="bike-slider__inner container">
+                <h3 className="bike-slider__title title">Рекомендації</h3>
+                <div className="bike-slider__wrapper">
                     <button
-                        className="bike-slider__btn bike-slider--prev"
+                        className="bike-slider__btn bike-slider__btn--prev"
                         type="button"
                     ></button>
                     <div className="bike-slider__container">
@@ -22,7 +22,7 @@ const BikeSlider = () => {
                         </ul>
                     </div>
                     <button
-                        className="bike-slider__btn bike-slider--next"
+                        className="bike-slider__btn bike-slider__btn--next"
                         type="button"
                     ></button>
                 </div>

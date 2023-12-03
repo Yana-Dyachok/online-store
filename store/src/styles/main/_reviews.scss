@@ -2,67 +2,73 @@
 @import '../_colors';
 //reviews---------------------------------------------------------------------------------------------------------------------
 .reviews {
+    &__inner {
+        flex-direction: column;
+    }
+
     // &__title {
     // }
 
     // &__slider {
     // }
 
-    &-btn--prev {
-        background: url('../assets/icons/slider-btn-prev.svg') center no-repeat;
-    }
+    &-slider {
+        @include centerPosition;
+        align-items: center;
 
-    &-btn--next {
-        background: url('../assets/icons/slider-btn-next.svg') center no-repeat;
-    }
-}
+        &__btn {
+            width: 1.6rem;
+            height: 3rem;
 
-.slider {
-    @include centerPosition;
-    align-items: center;
+            &--prev {
+                background: url('../assets/icons/slider-btn-prev.svg') center
+                    no-repeat;
+            }
+            &--next {
+                background: url('../assets/icons/slider-btn-next.svg') center
+                    no-repeat;
+            }
+        }
 
-    &__btn {
-        @include btnSliderSize;
-    }
+        &__container {
+            //temporary
+            width: 121.3rem;
+            height: 22rem;
+            position: relative;
+            padding: 0 1rem;
+            overflow: hidden;
+        }
 
-    &__container {
-        //temporary
-        width: 121.3rem;
-        height: 22rem;
-        position: relative;
-        padding: 0 1rem;
-        overflow: hidden;
-    }
+        &__list {
+            width: 300rem; //temporary
+            display: flex;
+            gap: 2rem;
+        }
 
-    &__list {
-        width: 500rem; //temporary
-        display: flex;
-        gap: 2rem;
-    }
+        &__item {
+            width: 59.153rem;
+            height: 20rem;
+            display: flex;
+        }
 
-    &__item {
-        width: 59.153rem;
-        height: 20rem;
-        display: flex;
-    }
+        &__text {
+            border: 0.1rem solid $c-gray--600;
+            border-radius: 0 1rem 1rem 0;
+        }
 
-    &__text {
-        border: 0.1rem solid $text-light;
-        border-radius: 0 1rem 1rem 0;
-    }
+        &__name {
+            font-size: 2.7rem;
+        }
 
-    &__name {
-        font-size: 2.7rem;
-    }
+        &__stars {
+            width: 12.5rem;
+            height: 2.5rem;
+            background: url('../assets/icons/star.svg') repeat-x;
+        }
 
-    &__stars {
-        width: 12.5rem;
-        height: 2.5rem;
-        background: url('../assets/icons/star.svg') repeat-x;
-    }
-
-    &__description {
-        font-size: 2.7rem;
-        color: $background-gradient;
+        &__description {
+            font-size: 2.7rem;
+            color: $c-gray--900;
+        }
     }
 }

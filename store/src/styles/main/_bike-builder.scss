@@ -2,13 +2,20 @@
 @import '../_colors';
 
 //bike builder section-------------------------------------------------------------------------------------------------------
-#bike-builder {
-    background: radial-gradient(circle, $background-gradient, $background-dark);
-}
 
 .bike-builder {
+    background: radial-gradient(
+        234.6% 38.29% at 52.08% 56.11%,
+        $c-gray--900 0%,
+        $c-gray--1000 100%
+    );
+
+    &__container {
+        flex-direction: column;
+    }
+
     &__title {
-        color: $background-white;
+        color: $c-white;
     }
 
     &__inner {
@@ -30,19 +37,17 @@
 
     &__name {
         font-size: 2.7rem;
-        color: $background-white;
+        color: $c-white;
     }
 
-    &__buttons {
-        & > form {
-            display: flex;
-            gap: 1rem;
-        }
+    &__form {
+        display: flex;
+        gap: 1rem;
     }
 
     &__item {
         padding: 1rem;
-        background-color: $btn-color;
+        background-color: $c-gray--600;
     }
 
     // &__label {
@@ -50,6 +55,6 @@
 
     &__btn {
         padding: 1rem;
-        background-color: $orange;
+        background-color: $c-orange--500;
     }
 }

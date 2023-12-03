@@ -3,15 +3,15 @@ import ReviewsSliderItem from './ReviewsSliderItem';
 const Reviews = () => {
     return (
         <section className="reviews">
-            <div className="container">
-                <h3 className="reviews__title titles">Відгуки</h3>
-                <div className="reviews__slider slider">
+            <div className="reviews__inner container">
+                <h3 className="reviews__title title">Відгуки</h3>
+                <div className="reviews__slider reviews-slider ">
                     <button
-                        className="slider__btn reviews-btn--prev"
+                        className="reviews-slider__btn reviews-slider__btn--prev"
                         type="button"
                     ></button>
-                    <div className="slider__container">
-                        <ul class="slider__list">
+                    <div className="reviews-slider__container">
+                        <ul class="reviews-slider__list">
                             <ReviewsSliderItem />
                             <ReviewsSliderItem />
                             <ReviewsSliderItem />
@@ -20,7 +20,7 @@ const Reviews = () => {
                         </ul>
                     </div>
                     <button
-                        className="slider__btn reviews-btn--next"
+                        className="reviews-slider__btn reviews-slider__btn--next"
                         type="button"
                     ></button>
                 </div>

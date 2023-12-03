@@ -2,16 +2,30 @@
 @import '../_colors';
 //bike slider-----------------------------------------------------------------------------------------------------------
 .bike-slider {
+    &__inner {
+        flex-direction: column;
+    }
     // &__title {
     // }
 
-    &__inner {
+    &__wrapper {
         @include centerPosition;
         align-items: center;
     }
 
     &__btn {
-        @include btnSliderSize;
+        width: 1.6rem;
+        height: 3rem;
+
+        &--prev {
+            background: url('../assets/icons/slider-btn-prev.svg') center
+                no-repeat;
+        }
+
+        &--next {
+            background: url('../assets/icons/slider-btn-next.svg') center
+                no-repeat;
+        }
     }
 
     &__container {
@@ -28,18 +42,7 @@
         display: flex;
         gap: 2rem;
     }
-}
 
-.bike-slider--prev {
-    background: url('../assets/icons/slider-btn-prev.svg') center no-repeat;
-}
-
-.bike-slider--next {
-    background: url('../assets/icons/slider-btn-next.svg') center no-repeat;
-}
-
-// bike slider item----------------------------------------------------------------------------------------------------
-.bike-slider {
     &__item {
         width: 28rem;
         height: 35.5rem;
@@ -54,6 +57,6 @@
 
     &__price {
         font-size: 2.7rem;
-        color: $orange;
+        color: $c-orange--500;
     }
 }

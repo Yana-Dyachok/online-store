@@ -11,17 +11,18 @@
     // }
 
     &__name {
-        color: $text-orange;
+        color: $c-orange--900;
     }
 
     &__description {
         font-family: 'Roboto Slab';
         font-size: 4rem;
+        color: $c-black;
     }
 
     &__btn {
         padding: 1rem 3rem;
-        background-color: $orange;
+        background-color: $c-orange--500;
     }
 
     &__img {

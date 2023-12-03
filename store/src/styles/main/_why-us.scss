@@ -21,7 +21,8 @@
 // }
 
 .why-us {
-    & > .container {
+    &__inner {
+        flex-direction: column;
         justify-content: space-between;
     }
 
@@ -89,6 +90,6 @@
     }
 
     &__text {
-        color: $background-gradient;
+        color: $c-gray--900;
     }
 }

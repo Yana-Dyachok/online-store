@@ -1,8 +1,8 @@
 const WhyUs = () => {
         return (
             <section className="why-us">
-                <div className="container">
-                    <h2 className="why-us__title titles">Чому обирають нас?</h2>
+                <div className="why-us__inner container">
+                    <h2 className="why-us__title title">Чому обирають нас?</h2>
                     <div className="why-us__wrapper">
                         <ul className="why-us__column benefits">
                             <li className="benefits__item benefits__item--one">

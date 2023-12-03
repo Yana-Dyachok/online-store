@@ -2,7 +2,7 @@
 @import '../_colors';
 
 .header {
-    & > .container {
+    &__inner {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -33,24 +33,25 @@
 
     &__link {
         font-size: 2.7rem;
-        color: $text-light;
+        color: $c-gray--600;
     }
 }
 
 .actions {
     &__btn {
+        height: 3.2rem;
+        width: 3.2rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
         cursor: pointer;
-    }
 
-    &__btn--search {
-        height: 3.2rem;
-        width: 3.2rem;
-        background: url('../assets/icons/search.svg') center no-repeat;
-    }
+        &--search {
+            background-image: url('../assets/icons/search.svg');
+        }
 
-    &__btn--cart {
-        height: 3.2rem;
-        width: 3.2rem;
-        background: url('../assets/icons/cart.svg') center no-repeat;
+        &--cart {
+            background: url('../assets/icons/cart.svg');
+        }
     }
 }

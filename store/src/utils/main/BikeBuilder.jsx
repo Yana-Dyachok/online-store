@@ -1,8 +1,8 @@
 const BikeBuilder = () => {
         return (
-            <section id="bike-builder">
-                <div className="container">
-                    <h2 className="bike-builder__title titles">
+            <section className="bike-builder" id="bike-builder">
+                <div className="bike-builder__container container">
+                    <h2 className="bike-builder__title title">
                         Підбір велосипеда
                     </h2>
                     <div className="bike-builder__inner">
@@ -12,7 +12,7 @@ const BikeBuilder = () => {
                                 Тип велосипеда
                             </h3>
                             <div className="bike-builder__buttons">
-                                <form>
+                                <form className="bike-builder__form">
                                     <div className="bike-builder__item btn">
                                         <input
                                             type="radio"
@@ -76,7 +76,7 @@ const BikeBuilder = () => {
                             </div>
                             <h3 className="bike-builder__name">Зріст</h3>
                             <div className="bike-builder__buttons">
-                                <form>
+                                <form className="bike-builder__form">
                                     <div className="bike-builder__item btn">
                                         <input
                                             type="radio"
@@ -127,7 +127,7 @@ const BikeBuilder = () => {
                                 Діаметр колес
                             </h3>
                             <div className="bike-builder__buttons">
-                                <form>
+                                <form className="bike-builder__form">
                                     <div className="bike-builder__item btn">
                                         <input
                                             type="radio"

@@ -2,13 +2,12 @@
 @import '../_colors';
 
 .footer {
+    background-color: $c-orange--500;
 
-    background-color: $orange;
-    & > .container {
+    &__inner {
         flex-direction: column;
-        padding: 2rem 0rem;
     }
-  
+
     &__information {
         display: flex;
         justify-content: space-evenly;
@@ -16,7 +15,8 @@
     }
 
     &__column {
-        color: $background-white;
+        color: $c-white;
+        font-style: normal;
     }
 
     &__name {
@@ -50,33 +50,70 @@
     &__copy-right {
         grid-row: 2;
         font-size: 2.7rem;
-        color: $background-gradient;
+        color: $c-gray--900;
     }
 }
 
 .contacts {
-
     &__list {
         display: flex;
         gap: 2rem;
     }
+
     // &__item {
     // }
-    // &__link {
-    
-    // }
+
+    &__link {
+        width: 3rem;
+        height: 3rem;
+        display: inline-block;
+    }
+
+    &__link--mail {
+        background: url('../assets/icons/gmail.svg') center no-repeat;
+    }
+
+    &__link--facebook {
+        background: url('../assets/icons/facebook.svg') center no-repeat;
+    }
+
+    &__link--instagram {
+        background: url('../assets/icons/instagram.svg') center no-repeat;
+    }
+
+    &__link--telegram {
+        background: url('../assets/icons/telegram.svg') center no-repeat;
+    }
 }
 
-.cards {
-
+.payment-methods {
     &__list {
         display: flex;
         gap: 2rem;
     }
+
     // &__item {
     // }
-    // &__link {
-    
-    // }
-}
 
+    &__link {
+        width: 7.5rem;
+        height: 3rem;
+        display: inline-block;
+    }
+
+    &__link--google {
+        background: url('../assets/icons/google-pay.svg') center no-repeat;
+    }
+
+    &__link--apple {
+        background: url('../assets/icons/apple-pay.svg') center no-repeat;
+    }
+
+    &__link--visa {
+        background: url('../assets/icons/visa.svg') center no-repeat;
+    }
+
+    &__link--master {
+        background: url('../assets/icons/master-card.svg') center no-repeat;
+    }
+}

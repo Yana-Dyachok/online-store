@@ -13,7 +13,7 @@ const WhyUs = () => {
                                     При замовленні до 17:00 відправимо сьогодні.
                                 </p>
                             </li>
-                            <li className="benefits__item benefits__item--second">
+                            <li className="benefits__item benefits__item--two">
                                 <h3 className="benefits__name">
                                     Безкоштовна доставка.
                                 </h3>

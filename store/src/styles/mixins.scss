@@ -10,13 +10,3 @@ $background-white: #ffffff;
     justify-content: center;
     align-content: center;
 }
-
-@mixin benefitsIcon {
-    display: block;
-    position: absolute;
-    left: 0%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 5rem;
-    height: 5rem;
-}

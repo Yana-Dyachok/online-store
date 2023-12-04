@@ -116,7 +116,7 @@ h3 {
 .hero__img {
   width: 160rem;
   height: 80.1rem;
-  background: url("../assets/img/bike-hero.jpg") center/contain no-repeat;
+  background: url("../assets/img/bike-hero.webp") center/contain no-repeat;
 }
 
 .bike-slider__inner {
@@ -146,7 +146,7 @@ h3 {
   overflow: hidden;
 }
 .bike-slider__list {
-  width: 500rem;
+  width: 300rem;
   display: flex;
   gap: 2rem;
 }
@@ -155,7 +155,8 @@ h3 {
   height: 35.5rem;
   border-radius: 2rem;
 }
-.bike-slider__price {
+
+.bike-card__price {
   font-size: 2.7rem;
   color: #e5711d;
 }
@@ -175,7 +176,7 @@ h3 {
 .bike-builder__img {
   height: 65rem;
   width: 65rem;
-  background: url("../assets/img/bike-builder.png") center no-repeat;
+  background: url("../assets/img/bike-builder.webp") center no-repeat;
 }
 .bike-builder__parameters {
   display: flex;
@@ -233,24 +234,25 @@ h3 {
   display: flex;
   gap: 2rem;
 }
-.reviews-slider__item {
+
+.reviews-card {
   width: 59.153rem;
   height: 20rem;
   display: flex;
 }
-.reviews-slider__text {
+.reviews-card__text {
   border: 0.1rem solid #6d625a;
   border-radius: 0 1rem 1rem 0;
 }
-.reviews-slider__name {
+.reviews-card__name {
   font-size: 2.7rem;
 }
-.reviews-slider__stars {
+.reviews-card__stars {
   width: 12.5rem;
   height: 2.5rem;
   background: url("../assets/icons/star.svg") repeat-x;
 }
-.reviews-slider__description {
+.reviews-card__description {
   font-size: 2.7rem;
   color: #554d47;
 }
@@ -270,7 +272,7 @@ h3 {
 .why-us__img {
   width: 65rem;
   height: 38.4rem;
-  background: url("../assets/img/why-us-bike-img.jpg") center no-repeat;
+  background: url("../assets/img/why-us-bike-img.webp") center no-repeat;
 }
 
 .benefits {
@@ -281,8 +283,8 @@ h3 {
   position: relative;
   margin-bottom: 1rem;
 }
-.benefits__item:nth-child(1):before {
-  content: url("../assets/icons/why-us-one.svg");
+.benefits__item:before {
+  content: "";
   display: block;
   position: absolute;
   left: 0%;
@@ -291,55 +293,23 @@ h3 {
   width: 5rem;
   height: 5rem;
 }
-.benefits__item:nth-child(2):before {
-  content: url("../assets/icons/why-us-two.svg");
-  display: block;
-  position: absolute;
-  left: 0%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 5rem;
-  height: 5rem;
+.benefits__item--one:before {
+  background: url("../assets/icons/why-us-one.svg") center no-repeat;
 }
-.benefits__item:nth-child(3):before {
-  content: url("../assets/icons/why-us-three.svg");
-  display: block;
-  position: absolute;
-  left: 0%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 5rem;
-  height: 5rem;
+.benefits__item--two:before {
+  background: url("../assets/icons/why-us-two.svg") center no-repeat;
 }
-.benefits__item--second:nth-child(1):before {
-  content: url("../assets/icons/why-us-four.svg");
-  display: block;
-  position: absolute;
-  left: 0%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 5rem;
-  height: 5rem;
+.benefits__item--three:before {
+  background: url("../assets/icons/why-us-three.svg") center no-repeat;
 }
-.benefits__item--second:nth-child(2):before {
-  content: url("../assets/icons/why-us-five.svg");
-  display: block;
-  position: absolute;
-  left: 0%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 5rem;
-  height: 5rem;
+.benefits__item--four:before {
+  background: url("../assets/icons/why-us-four.svg") center no-repeat;
 }
-.benefits__item--second:nth-child(3):before {
-  content: url("../assets/icons/why-us-six.svg");
-  display: block;
-  position: absolute;
-  left: 0%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 5rem;
-  height: 5rem;
+.benefits__item--five:before {
+  background: url("../assets/icons/why-us-five.svg") center no-repeat;
+}
+.benefits__item--six:before {
+  background: url("../assets/icons/why-us-six.svg") center no-repeat;
 }
 .benefits__name {
   font-size: 2.7rem;

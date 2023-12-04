@@ -41,7 +41,7 @@
     &__img {
         width: 65rem;
         height: 38.4rem;
-        background: url('../assets/img/why-us-bike-img.jpg') center no-repeat;
+        background: url('../assets/img/why-us-bike-img.webp') center no-repeat;
     }
 }
 
@@ -51,37 +51,43 @@
         padding-left: 7rem;
         position: relative;
         margin-bottom: 1rem;
-
-        &:nth-child(1):before {
-            content: url('../assets/icons/why-us-one.svg');
-            @include benefitsIcon;
+        &:before {
+            content:'';
+            display: block;
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 5rem;
+            height: 5rem;
+        }
+      
+        &--one:before {
+            background: url('../assets/icons/why-us-one.svg') center no-repeat;
         }
 
-        &:nth-child(2):before {
-            content: url('../assets/icons/why-us-two.svg');
-            @include benefitsIcon;
+        &--two:before {
+            background: url('../assets/icons/why-us-two.svg') center no-repeat;
         }
 
-        &:nth-child(3):before {
-            content: url('../assets/icons/why-us-three.svg');
-            @include benefitsIcon;
+        &--three:before {
+            background: url('../assets/icons/why-us-three.svg') center no-repeat;
+    
         }
 
-        &--second {
-            &:nth-child(1):before {
-                content: url('../assets/icons/why-us-four.svg');
-                @include benefitsIcon;
+        &--four:before {
+            background: url('../assets/icons/why-us-four.svg') center no-repeat;
+              
             }
 
-            &:nth-child(2):before {
-                content: url('../assets/icons/why-us-five.svg');
-                @include benefitsIcon;
-            }
+        &--five:before {
+            background: url('../assets/icons/why-us-five.svg') center no-repeat;
+               
+        }
 
-            &:nth-child(3):before {
-                content: url('../assets/icons/why-us-six.svg');
-                @include benefitsIcon;
-            }
+        &--six:before {
+            background: url('../assets/icons/why-us-six.svg') center no-repeat;
+               
         }
     }
 

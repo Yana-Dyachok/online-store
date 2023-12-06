@@ -5,7 +5,7 @@ const Hero = () => {
                 <div className="hero__text">
                     <h1 className="hero__name title">Розкрий свій шлях</h1>
                     <h2 className="hero__description">
-                        Підбери велосипед, який створенний для твоїх досягнень!
+                        Підбери велосипед, який створений для твоїх досягнень!
                     </h2>
                     <button className="hero__btn btn" type="button">
                         Підібрати

@@ -103,7 +103,7 @@ const BikeBuilder = () => {
                                             htmlFor="height-two"
                                         >
                                             {' '}
-                                            170-180
+                                            171-180
                                         </label>
                                     </div>
                                     <div className="bike-builder__item btn">
@@ -118,7 +118,7 @@ const BikeBuilder = () => {
                                             htmlFor="height-three"
                                         >
                                             {' '}
-                                            180-190
+                                            181-190
                                         </label>
                                     </div>
                                 </form>

@@ -1,4 +1,4 @@
-import imgItem from '../../../src/assets/img/slider-img.webp';
+import imgItem from '../../../assets/img/slider-img.webp';
 const ReviewsCards=()=> {
     return (
       <article className="reviews-card">

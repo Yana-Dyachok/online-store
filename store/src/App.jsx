@@ -1,16 +1,13 @@
 import React from 'react';
-import {RouterProvider} from "react-router-dom";
-import {router} from "./routing";
-const App=()=> <RouterProvider router={router}/>
-// const App=()=> {
-//     return (
-//         <div className="App wrapper">
-//             <Header />
-//             <Main/>
-//             <Footer/>
-//         </div>
-//     );
-// }
+import HomePage from './utils/pages/home-page/HomePage'
+import { Route, Routes } from 'react-router-dom';
+const App = () => {
+    return (
+     <Routes>
+      <Route path='/' element={<HomePage />} />
+     </Routes>
+    );
+  }
 
 
 export default App;

@@ -1,9 +1,9 @@
 @import '_reset';
 @import 'mixins';
 @import '_colors';
-@import './header/_header';
-@import './main/main';
-@import './footer/_footer';
+@import '../utils/components/header/_header';
+@import './main';
+@import '../utils/components/footer/_footer';
 
 @font-face {
     font-family: 'Roboto Condensed';

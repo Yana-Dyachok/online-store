@@ -1,5 +1,5 @@
-@import '../mixins';
-@import '../_colors';
+@import '../../../styles/mixins.scss';
+@import '../../../styles/colors';
 //why us section --------------------------------------------------------------------------------------------------------
 
 // .why-us__title {
@@ -96,6 +96,7 @@
     }
 
     &__text {
+        font-size: 1.8rem;
         color: $c-gray--900;
     }
 }

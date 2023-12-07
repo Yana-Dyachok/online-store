@@ -1,4 +1,4 @@
-import ReviewsCards from './ReviewsCards';
+import ReviewsCards from '../reviews-cards/ReviewsCards';
 
 const ReviewsSliderItem = () => {
     return (

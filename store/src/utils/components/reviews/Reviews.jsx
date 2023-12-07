@@ -1,5 +1,5 @@
-import ReviewsSliderItem from './ReviewsSliderItem';
-
+import ReviewsSliderItem from '../reviews-slider-items/ReviewsSliderItem';
+import './_reviews.scss';
 const Reviews = () => {
     return (
         <section className="reviews">

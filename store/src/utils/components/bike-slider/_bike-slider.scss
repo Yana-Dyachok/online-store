@@ -1,5 +1,5 @@
-@import '../mixins';
-@import '../_colors';
+@import '../../../styles/mixins.scss';
+@import '../../../styles/colors';
 //bike slider-----------------------------------------------------------------------------------------------------------
 .bike-slider {
     &__inner {
@@ -17,15 +17,15 @@
         width: 1.6rem;
         height: 3rem;
 
-        &--prev {
-            background: url('../assets/icons/slider-btn-prev.svg') center
-                no-repeat;
-        }
+        // &--prev {
+        //     background: url('../assets/icons/slider-btn-prev.svg') center
+        //         no-repeat;
+        // }
 
-        &--next {
-            background: url('../assets/icons/slider-btn-next.svg') center
-                no-repeat;
-        }
+        // &--next {
+        //     background: url('../assets/icons/slider-btn-next.svg') center
+        //         no-repeat;
+        // }
     }
 
     &__container {

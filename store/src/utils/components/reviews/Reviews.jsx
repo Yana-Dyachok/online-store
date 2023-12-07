@@ -1,4 +1,9 @@
 import ReviewsSliderItem from '../reviews-slider-items/ReviewsSliderItem';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import { useState, useEffect } from 'react';
+import 'swiper/css';
+import 'swiper/css/navigation';
 import './_reviews.scss';
 const Reviews = () => {
     return (
@@ -11,13 +16,30 @@ const Reviews = () => {
                         type="button"
                     ></button>
                     <div className="reviews-slider__container">
-                        <ul class="reviews-slider__list">
-                            <ReviewsSliderItem />
-                            <ReviewsSliderItem />
-                            <ReviewsSliderItem />
-                            <ReviewsSliderItem />
-                            <ReviewsSliderItem />
-                        </ul>
+                    <Swiper
+                        modules={[Navigation]}
+                        navigation={{
+                            nextEl: '.reviews-slider__btn--next',
+                            prevEl: '.reviews-slider__btn--prev',
+                        }}
+                        spaceBetween={5}
+                        slidesPerView={2}
+                        onSwiper={(swiper) => console.log(swiper)}
+                        onSlideChange={() => console.log('slide change')}
+                    >
+                            <SwiperSlide>
+                                <ReviewsSliderItem/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <ReviewsSliderItem/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <ReviewsSliderItem/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <ReviewsSliderItem/>
+                            </SwiperSlide>
+                    </Swiper>
                     </div>
                     <button
                         className="reviews-slider__btn reviews-slider__btn--next"

@@ -19,15 +19,17 @@
         &__btn {
             width: 1.6rem;
             height: 3rem;
+            cursor: pointer;
 
-            // &--prev {
-            //     background: url('../assets/icons/slider-btn-prev.svg') center
-            //         no-repeat;
-            // }
-            // &--next {
-            //     background: url('../assets/icons/slider-btn-next.svg') center
-            //         no-repeat;
-            // }
+            &--prev {
+                padding-right: 1rem;
+                background: url('../../../assets/icons/slider-btn-prev.svg') center no-repeat;
+            }
+
+            &--next {
+                padding-left: 1rem;
+                background: url('../../../assets/icons/slider-btn-next.svg') center no-repeat;
+            }
         }
 
         &__container {
@@ -70,7 +72,7 @@
     &__stars {
         width: 12.5rem;
         height: 2.5rem;
-        // background: url('../assets/icons/star.svg') repeat-x;
+        background: url('../../../assets/icons/star.svg') repeat-x;
     }
 
     &__description {

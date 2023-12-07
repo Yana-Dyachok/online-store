@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './_bike-slider.scss'; // проблеми із іконками у файлі -через це закомітила
-import BikeCard from '../bike-card/BikeCard';
 
 const BikeSlider = () => {
     const [bikes, setBikes] = useState([]);

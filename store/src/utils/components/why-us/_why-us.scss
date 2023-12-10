@@ -41,7 +41,7 @@
     &__img {
         width: 65rem;
         height: 38.4rem;
-        background: url('../assets/img/why-us-bike-img.webp') center no-repeat;
+        background: url('../../../assets/img/why-us-bike-img.webp') center no-repeat;
     }
 }
 
@@ -60,33 +60,35 @@
             transform: translateY(-50%);
             width: 5rem;
             height: 5rem;
+            background-repeat: no-repeat;
+            background-position: center;
         }
       
         &--one:before {
-            background: url('../assets/icons/why-us-one.svg') center no-repeat;
+            background-image: url('../../../assets/icons/why-us-one.svg');
         }
 
         &--two:before {
-            background: url('../assets/icons/why-us-two.svg') center no-repeat;
+            background-image: url('../../../assets/icons/why-us-two.svg');
         }
 
         &--three:before {
-            background: url('../assets/icons/why-us-three.svg') center no-repeat;
+            background-image: url('../../../assets/icons/why-us-three.svg');
     
         }
 
         &--four:before {
-            background: url('../assets/icons/why-us-four.svg') center no-repeat;
+            background-image: url('../../../assets/icons/why-us-four.svg');
               
             }
 
         &--five:before {
-            background: url('../assets/icons/why-us-five.svg') center no-repeat;
+            background-image: url('../../../assets/icons/why-us-five.svg');
                
         }
 
         &--six:before {
-            background: url('../assets/icons/why-us-six.svg') center no-repeat;
+            background-image: url('../../../assets/icons/why-us-six.svg');
                
         }
     }

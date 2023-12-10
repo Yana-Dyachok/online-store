@@ -1,6 +1,6 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/colors';
-//bike slider-----------------------------------------------------------------------------------------------------------
+
 .bike-slider {
     &__inner {
         flex-direction: column;
@@ -16,22 +16,24 @@
     &__btn {
         width: 1.6rem;
         height: 3rem;
+        background-repeat: no-repeat;
+        background-position: center;
         cursor: pointer;
 
         &--prev {
-            padding-right: 1rem;
-            background: url('../../../assets/icons/slider-btn-prev.svg') center no-repeat;
+            padding-right: 2rem;
+            background-image: url('../../../assets/icons/slider-btn-prev.svg');
         }
 
         &--next {
-            padding-left: 1rem;
-            background: url('../../../assets/icons/slider-btn-next.svg') center no-repeat;
+            padding-left: 2rem;
+            background-image: url('../../../assets/icons/slider-btn-next.svg');
         }
     }
 
     &__container {
         //temporary
-        max-width: 119.3rem;
+        max-width: 119rem;
         height: 35.5rem;
         position: relative;
         padding: 0 1rem;
@@ -48,18 +50,5 @@
         width: 28rem;
         height: 35.5rem;
         border-radius: 2rem;
-    }
-}
-
-.bike-card {
-    // &__img {
-    // }
-
-    // &__name {
-    // }
-
-    &__price {
-        font-size: 2.7rem;
-        color: $c-orange--500;
     }
 }

@@ -1,0 +1,14 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/colors';
+.bike-card {
+    // &__img {
+    // }
+
+    // &__name {
+    // }
+
+    &__price {
+        font-size: 2.7rem;
+        color: $c-orange--500;
+    }
+}

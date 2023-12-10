@@ -1,3 +1,4 @@
+import './_why-us.scss';
 const WhyUs = () => {
         return (
             <section className="why-us">

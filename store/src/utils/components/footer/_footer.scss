@@ -67,22 +67,24 @@
         width: 3rem;
         height: 3rem;
         display: inline-block;
-    }
+        background-repeat: no-repeat;
+        background-position: center;
 
-    &__link--mail {
-        background: url('../assets/icons/gmail.svg') center no-repeat;
-    }
+        &--mail {
+            background-image: url('../../../assets/icons/gmail.svg');
+        }
 
-    &__link--facebook {
-        background: url('../assets/icons/facebook.svg') center no-repeat;
-    }
+        &--facebook {
+            background-image: url('../../../assets/icons/facebook.svg');
+        }
 
-    &__link--instagram {
-        background: url('../assets/icons/instagram.svg') center no-repeat;
-    }
+        &--instagram {
+            background-image: url('../../../assets/icons/instagram.svg');
+        }
 
-    &__link--telegram {
-        background: url('../assets/icons/telegram.svg') center no-repeat;
+        &--telegram {
+            background-image: url('../../../assets/icons/telegram.svg');
+        }
     }
 }
 
@@ -99,21 +101,23 @@
         width: 7.5rem;
         height: 3rem;
         display: inline-block;
-    }
+        background-repeat: no-repeat;
+        background-position: center;
 
-    &__link--google {
-        background: url('../assets/icons/google-pay.svg') center no-repeat;
-    }
+        &--google {
+            background-image: url('../../../assets/icons/google-pay.svg');
+        }
 
-    &__link--apple {
-        background: url('../assets/icons/apple-pay.svg') center no-repeat;
-    }
+        &--apple {
+            background-image: url('../../../assets/icons/apple-pay.svg');
+        }
 
-    &__link--visa {
-        background: url('../assets/icons/visa.svg') center no-repeat;
-    }
+        &--visa {
+            background-image: url('../../../assets/icons/visa.svg');
+        }
 
-    &__link--master {
-        background: url('../assets/icons/master-card.svg') center no-repeat;
+        &--master {
+            background-image: url('../../../assets/icons/master-card.svg');
+        }
     }
 }

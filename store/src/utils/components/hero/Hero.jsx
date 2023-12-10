@@ -1,7 +1,8 @@
+import './_hero.scss'
 const Hero = () => {
     return (
         <section className="hero">
-            <div className="container">
+            <div className="hero_inner container">
                 <div className="hero__text">
                     <h1 className="hero__name title">Розкрий свій шлях</h1>
                     <h2 className="hero__description">

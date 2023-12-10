@@ -3,7 +3,7 @@
 // hero section--------------------------------------------------------------------------------------------------------
 
 .hero {
-    & > .container {
+    &__inner {
         flex-direction: row;
     }
 
@@ -15,7 +15,7 @@
     }
 
     &__description {
-        font-family: 'Roboto Slab';
+        font-family: 'Roboto Slab' sans-serif;
         font-size: 4rem;
         color: $c-black;
     }
@@ -28,6 +28,6 @@
     &__img {
         width: 160rem;
         height: 80.1rem;
-        background: url('../assets/img/bike-hero.webp') center/contain no-repeat;
+        background: url('../../../assets/img/bike-hero.webp') center/contain no-repeat;
     }
 }

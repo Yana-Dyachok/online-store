@@ -1,6 +1,6 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/colors';
-//reviews---------------------------------------------------------------------------------------------------------------------
+
 .reviews {
     &__inner {
         flex-direction: column;
@@ -19,16 +19,18 @@
         &__btn {
             width: 1.6rem;
             height: 3rem;
+            background-repeat: no-repeat;
+            background-position: center;
             cursor: pointer;
 
             &--prev {
                 padding-right: 1rem;
-                background: url('../../../assets/icons/slider-btn-prev.svg') center no-repeat;
+                background-image: url('../../../assets/icons/slider-btn-prev.svg');
             }
 
             &--next {
                 padding-left: 1rem;
-                background: url('../../../assets/icons/slider-btn-next.svg') center no-repeat;
+                background-image: url('../../../assets/icons/slider-btn-next.svg');
             }
         }
 
@@ -50,33 +52,5 @@
         // &__item {
 
         // }
-    }
-}
-
-.reviews-card {
-    width: 59.153rem;
-    height: 20rem;
-    display: flex;
-    // &__img {
-    // }
-
-    &__text {
-        border: 0.1rem solid $c-gray--600;
-        border-radius: 0 1rem 1rem 0;
-    }
-
-    &__name {
-        font-size: 2.7rem;
-    }
-
-    &__stars {
-        width: 12.5rem;
-        height: 2.5rem;
-        background: url('../../../assets/icons/star.svg') repeat-x;
-    }
-
-    &__description {
-        font-size: 2.7rem;
-        color: $c-gray--900;
     }
 }

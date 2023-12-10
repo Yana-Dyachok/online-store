@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import { NavLink, Link } from 'react-router-dom';
+
+import './_header.scss';
 import logo from '../../../assets/icons/logo.svg';
 const Header = () => {
     return (
         <header className="header">
             <div className="header__inner container">
-                <a href="#">
+                <Link href="#">
                     <img
                         className="logo"
                         src={logo}
@@ -12,24 +15,24 @@ const Header = () => {
                         width="172"
                         height="87"
                     />
-                </a>
+                </Link>
                 <nav className="nav">
                     <ul className="nav__list">
-                        <li className="nav__item">
+                        <NavLink className="nav__item">
                             <a className="nav__link" href="#">
                                 Каталог
                             </a>
-                        </li>
-                        <li className="nav__item">
+                        </NavLink>
+                        <NavLink className="nav__item">
                             <a className="nav__link" href="#">
                                 Акції
                             </a>
-                        </li>
-                        <li className="nav__item">
+                        </NavLink>
+                        <NavLink className="nav__item">
                             <a className="nav__link" href="#">
                                 Підтримка
                             </a>
-                        </li>
+                        </NavLink>
                     </ul>
                 </nav>
                 <div className="header__actions actions">

@@ -1,3 +1,4 @@
+import './_bike-builder.scss';
 const BikeBuilder = () => {
         return (
             <section className="bike-builder" id="bike-builder">

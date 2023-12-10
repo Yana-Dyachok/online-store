@@ -1,5 +1,6 @@
+import './_bike-card.scss';
 const BikeCard = ({ bike }) => {
-    const { productImageUrl, productName, productPrice } = bike;
+    const {productName, productPrice, productImageUrl} = bike;
 
     return (
         <article className="bike-card">

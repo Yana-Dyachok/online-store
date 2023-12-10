@@ -1,0 +1,29 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/colors';
+.reviews-card {
+    width: 59.153rem;
+    height: 20rem;
+    display: flex;
+    // &__img {
+    // }
+
+    &__text {
+        border: 0.1rem solid $c-gray--600;
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    &__name {
+        font-size: 2.7rem;
+    }
+
+    &__stars {
+        width: 12.5rem;
+        height: 2.5rem;
+        background: url('../../../assets/icons/star.svg') repeat-x;
+    }
+
+    &__description {
+        font-size: 2.7rem;
+        color: $c-gray--900;
+    }
+}

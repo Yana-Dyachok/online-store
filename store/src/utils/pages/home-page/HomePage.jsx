@@ -7,11 +7,11 @@ import Reviews from '../../components/reviews/Reviews';
 const HomePage = () => {
     return (
         <>
-            <Hero />;
-            <BikeBuilder />;
-            <BikeSlider />;
-            <WhyUs />;
-            <Reviews />;
+            <Hero />
+            <BikeBuilder />
+            <BikeSlider />
+            <WhyUs />
+            <Reviews />
         </>
     );
 };

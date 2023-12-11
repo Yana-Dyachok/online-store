@@ -1,24 +1,10 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/colors';
-//why us section --------------------------------------------------------------------------------------------------------
 
-// .why-us__title {
-// }
+
 .why-us__wrapper {
     display: flex;
 }
-// .why-us__column {
-// }
-// .benefits {
-// }
-// .benefits__item {
-// }
-// .benefits__name {
-// }
-// .benefits__text {
-// }
-// .why-us__img {
-// }
 
 .why-us {
     &__inner {
@@ -26,79 +12,14 @@
         justify-content: space-between;
     }
 
-    // &__title {
-
-    // }
-
     &__wrapper {
         display: flex;
         justify-content: space-between;
     }
 
-    // &__column {
-    // }
-
     &__img {
         width: 65rem;
         height: 38.4rem;
         background: url('../../../assets/img/why-us-bike-img.webp') center no-repeat;
-    }
-}
-
-.benefits {
-    padding: 0;
-    &__item {
-        padding-left: 7rem;
-        position: relative;
-        margin-bottom: 1rem;
-        &:before {
-            content:'';
-            display: block;
-            position: absolute;
-            left: 0%;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 5rem;
-            height: 5rem;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-      
-        &--one:before {
-            background-image: url('../../../assets/icons/why-us-one.svg');
-        }
-
-        &--two:before {
-            background-image: url('../../../assets/icons/why-us-two.svg');
-        }
-
-        &--three:before {
-            background-image: url('../../../assets/icons/why-us-three.svg');
-    
-        }
-
-        &--four:before {
-            background-image: url('../../../assets/icons/why-us-four.svg');
-              
-            }
-
-        &--five:before {
-            background-image: url('../../../assets/icons/why-us-five.svg');
-               
-        }
-
-        &--six:before {
-            background-image: url('../../../assets/icons/why-us-six.svg');
-               
-        }
-    }
-
-    &__name {
-        font-size: 2.7rem;
-    }
-
-    &__text {
-        font-size: 1.8rem;
-        color: $c-gray--900;
     }
 }

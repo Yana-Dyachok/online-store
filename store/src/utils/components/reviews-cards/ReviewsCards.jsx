@@ -6,7 +6,7 @@ const ReviewsCards=({reviews})=> {
           <img className='reviews-card__img' src={reviewPictureURI} alt="photo" width="199" height="200"/>
            <div className='reviews-card__text'>
             <p className='reviews-card__name'>{reviewName}</p>
-             <div className='reviews-card__stars'>{reviewStars}</div>
+             <div className='reviews-card__stars'  data-stars={reviewStars}></div>
              <p className='reviews-card__description'>{reviewText}</p>
            </div>
       </article>

@@ -1,5 +1,6 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/colors';
+
 .reviews-card {
     width: 59.153rem;
     height: 20rem;
@@ -20,6 +21,26 @@
         width: 12.5rem;
         height: 2.5rem;
         background: url('../../../assets/icons/star.svg') repeat-x;
+
+        &[data-stars='1'] {
+            width: 2.5rem;
+        }
+
+        &[data-stars='2'] {
+            width: 5rem;
+        }
+
+        &[data-stars='3'] {
+            width: 7.5rem;
+        }
+
+        &[data-stars='4'] {
+            width: 10rem;
+        }
+
+        &[data-stars='5'] {
+            width: 12.5rem;
+        }
     }
 
     &__description {

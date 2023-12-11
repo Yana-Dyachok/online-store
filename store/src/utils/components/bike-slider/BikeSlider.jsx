@@ -32,27 +32,37 @@ const BikeSlider = () => {
             <div className="bike-slider__inner container">
                 <h3 className="bike-slider__title title">Рекомендації</h3>
                 <div className="bike-slider__wrapper">
+                    <button
+                        className="bike-slider__btn bike-slider__btn--prev"
+                        type="button"
+                    ></button>
+                    <div className="bike-slider__container">
                     <Swiper
-                        modules={[Navigation]}
-                        navigation={{
-                            nextEl: '.bike-slider__btn--next',
-                            prevEl: '.bike-slider__btn--prev',
-                        }}
-                        spaceBetween={5}
-                        slidesPerView={4}
-                        onSwiper={(swiper) => console.log(swiper)}
-                        onSlideChange={() => console.log('slide change')}
-                    >
-                        {bikes.map((bike) => (
-                            <SwiperSlide key={bike.id}>
-                                <div className="bike-slider__item">
-                                    <BikeCard bike={bike} />
-                                </div>
-                            </SwiperSlide>
-                        ))}
+                            modules={[Navigation]}
+                            navigation={{
+                                nextEl: '.bike-slider__btn--next',
+                                prevEl: '.bike-slider__btn--prev',
+                            }}
+                            spaceBetween={5}
+                            slidesPerView={4}
+                            onSwiper={(swiper) => console.log(swiper)}
+                            onSlideChange={() => console.log('slide change')}
+                        >
+                            {bikes.map((bike) => (
+                                <SwiperSlide key={bike.id}>
+                                    <div className="bike-slider__item">
+                                        <BikeCard bike={bike} />
+                                    </div>
+                                </SwiperSlide>
+                            ))}
                     </Swiper>
+                    </div>
+                    <button
+                            className="bike-slider__btn bike-slider__btn--next"
+                            type="button"
+                        ></button>
                 </div>
-            </div>
+            </div>                 
         </section>
     );
 };

@@ -1,4 +1,5 @@
 import './_why-us.scss';
+import './_benefits.scss';
 const WhyUs = () => {
         return (
             <section className="why-us">

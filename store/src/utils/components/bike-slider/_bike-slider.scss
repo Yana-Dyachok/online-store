@@ -21,29 +21,21 @@
         cursor: pointer;
 
         &--prev {
-            padding-right: 2rem;
+            padding-right: 4rem;
             background-image: url('../../../assets/icons/slider-btn-prev.svg');
         }
 
         &--next {
-            padding-left: 2rem;
+            padding-left: 4rem;
             background-image: url('../../../assets/icons/slider-btn-next.svg');
         }
     }
 
     &__container {
-        //temporary
-        max-width: 119rem;
         height: 35.5rem;
         position: relative;
         padding: 0 1rem;
         overflow: hidden;
-    }
-
-    &__list {
-        width: 300rem; //temporary
-        display: flex;
-        gap: 2rem;
     }
 
     &__item {

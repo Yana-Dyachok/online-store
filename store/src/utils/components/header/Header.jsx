@@ -1,9 +1,17 @@
-import React, { Component } from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
+
+import OpenedCart from '../cart/OpenedCart'
 
 import './_header.scss';
 import logo from '../../../assets/icons/logo.svg';
+
 const Header = () => {
+    const [isCartOpen, setIsCartOpen] = useState(false);
+    const handleButtonClick = () => {
+      setIsCartOpen(!isCartOpen);
+    };
+
     return (
         <header className="header">
             <div className="header__inner container">
@@ -42,9 +50,10 @@ const Header = () => {
                     ></button>
                     <button
                         className="actions__btn actions__btn--cart"
-                        type="button"
+                        type="button" onClick={handleButtonClick}
                     ></button>
                 </div>
+                {isCartOpen && <OpenedCart />}
             </div>
         </header>
     );

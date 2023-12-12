@@ -1,0 +1,32 @@
+@import '../../../../styles/_mixins.scss';
+@import '../../../../styles/_colors.scss';
+@import '../../../../styles/_fonts.scss';
+
+.empty-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12rem;
+    font-family: 'Open Sans semi-bold', sans-serif;
+    &__img {
+        width: 16rem;
+        height: 16rem;
+        background: url('../../../../assets/icons/empty-shopping-cart.svg')
+            no-repeat;
+    }
+
+    &__report {
+        padding: 5rem 0rem 0rem;
+        font-size: 3.2rem;
+    }
+
+    &__advice {
+        font-size: 2.4rem;
+        padding-bottom: 10rem;
+    }
+
+    &__btn {
+        padding: 1.6rem 8.5rem;
+        background-color: $c-orange--800;
+    }
+}

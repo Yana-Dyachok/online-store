@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import './styles/index.css';
+import './styles/index.scss';
 import { Helmet } from 'react-helmet';
 import Header from './utils/components/header/Header';
 import App from './App';

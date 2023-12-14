@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './_footer.scss';
 const Footer = () => {
     return (
@@ -8,22 +9,24 @@ const Footer = () => {
                         <h3 className="footer__name">Велосипеди</h3>
                         <ul className="footer__list">
                             <li className="footer__item">
-                                <a className="footer__link" href="">
+                                <Link className="footer__link" to="/">
                                     Види велосипедів
-                                </a>
+                                </Link>
                             </li>
                             <li className="footer__item">
-                                <a className="footer__link" href=""></a>
-                                Каталог
+                                <Link className="footer__link" to="/">
+                                    Каталог
+                                </Link>
                             </li>
                             <li className="footer__item">
-                                <a className="footer__link" href="">
+                                <Link className="footer__link" to="/">
                                     Акції
-                                </a>
+                                </Link>
                             </li>
                             <li className="footer__item">
-                                <a className="footer__link" href=""></a>
-                                Пошук
+                                <Link className="footer__link" to="/">
+                                    Пошук
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -31,13 +34,12 @@ const Footer = () => {
                         <h3 className="footer__name">Інформація</h3>
                         <ul className="footer__list">
                             <li className="footer__item">
-                                <a className="footer__link" href="">
+                                <Link className="footer__link" to="/">
                                     Про нас
-                                </a>
+                                </Link>
                             </li>
                             <li className="footer__item">
-                                <a className="footer__link" href=""></a>
-                                Контактиг
+                                <Link className="footer__link" to="/"> Контакти</Link>
                             </li>
                         </ul>
                     </div>
@@ -45,22 +47,20 @@ const Footer = () => {
                         <h3 className="footer__name">Клієнтам</h3>
                         <ul className="footer__list">
                             <li className="footer__item">
-                                <a className="footer__link" href="">
+                                <Link className="footer__link" to="/">
                                     Доставка
-                                </a>
+                                </Link>
                             </li>
                             <li className="footer__item">
-                                <a className="footer__link" href=""></a>
-                                Умови оплати
+                                <Link className="footer__link" to="/"> Умови оплати</Link>
                             </li>
                             <li className="footer__item">
-                                <a className="footer__link" href="">
+                                <Link className="footer__link" to="/">
                                     Гарантія
-                                </a>
+                                </Link>
                             </li>
                             <li className="footer__item">
-                                <a className="footer__link" href=""></a>
-                                Повернення
+                                <Link className="footer__link" to="/"> Повернення</Link>
                             </li>
                         </ul>
                     </div>
@@ -97,32 +97,56 @@ const Footer = () => {
                     <address className="footer__contacts contacts">
                         <ul className="contacts__list">
                             <li className="contacts__item">
-                                <a className="contacts__link contacts__link--mail" href="#"></a>
+                                <a
+                                    className="contacts__link contacts__link--mail"
+                                    href="#"
+                                ></a>
                             </li>
                             <li className="contacts__item">
-                                <a className="contacts__link contacts__link--facebook" href="#"></a>
+                                <a
+                                    className="contacts__link contacts__link--facebook"
+                                    href="#"
+                                ></a>
                             </li>
                             <li className="contacts__item">
-                                <a className="contacts__link contacts__link--instagram" href="#"></a>
+                                <a
+                                    className="contacts__link contacts__link--instagram"
+                                    href="#"
+                                ></a>
                             </li>
                             <li className="contacts__item">
-                                <a className="contacts__link contacts__link--telegram" href="#"></a>
+                                <a
+                                    className="contacts__link contacts__link--telegram"
+                                    href="#"
+                                ></a>
                             </li>
                         </ul>
                     </address>
                     <div className="footer__cards payment-methods">
                         <ul className="payment-methods__list">
                             <li className="payment-methods__item">
-                                <a className="payment-methods__link  payment-methods__link--google" href="#"></a>
+                                <a
+                                    className="payment-methods__link  payment-methods__link--google"
+                                    href="#"
+                                ></a>
                             </li>
                             <li className="payment-methods__item">
-                                <a className="payment-methods__link payment-methods__link--apple" href="#"></a>
+                                <a
+                                    className="payment-methods__link payment-methods__link--apple"
+                                    href="#"
+                                ></a>
                             </li>
                             <li className="payment-methods__item">
-                                <a className="payment-methods__link payment-methods__link--visa" href="#"></a>
+                                <a
+                                    className="payment-methods__link payment-methods__link--visa"
+                                    href="#"
+                                ></a>
                             </li>
                             <li className="payment-methods__item">
-                                <a className="payment-methods__link payment-methods__link--master" href="#"></a>
+                                <a
+                                    className="payment-methods__link payment-methods__link--master"
+                                    href="#"
+                                ></a>
                             </li>
                         </ul>
                     </div>

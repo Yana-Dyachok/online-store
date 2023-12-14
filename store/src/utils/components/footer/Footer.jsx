@@ -39,7 +39,9 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className="footer__item">
-                                <Link className="footer__link" to="/"> Контакти</Link>
+                                <Link className="footer__link" to="/">
+                                    Контакти
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -52,7 +54,9 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className="footer__item">
-                                <Link className="footer__link" to="/"> Умови оплати</Link>
+                                <Link className="footer__link" to="/">
+                                    Умови оплати
+                                </Link>
                             </li>
                             <li className="footer__item">
                                 <Link className="footer__link" to="/">
@@ -60,7 +64,9 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className="footer__item">
-                                <Link className="footer__link" to="/"> Повернення</Link>
+                                <Link className="footer__link" to="/">
+                                    Повернення
+                                </Link>
                             </li>
                         </ul>
                     </div>

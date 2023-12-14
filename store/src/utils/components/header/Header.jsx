@@ -8,7 +8,7 @@ import logo from '../../../assets/icons/logo.svg';
 
 const Header = () => {
     const [isCartOpen, setIsCartOpen] = useState(false);
-    const handleButtonClick = () => {
+    const handleToggleCart = () => {
       setIsCartOpen(!isCartOpen);
     };
 
@@ -50,10 +50,10 @@ const Header = () => {
                     ></button>
                     <button
                         className="actions__btn actions__btn--cart"
-                        type="button" onClick={handleButtonClick}
+                        type="button" onClick={handleToggleCart}
                     ></button>
                 </div>
-                {isCartOpen && <OpenedCart />}
+                {isCartOpen && <OpenedCart handleToggleCart={handleToggleCart}/>}
             </div>
         </header>
     );

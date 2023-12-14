@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="header__inner container">
-                <Link href="#">
+                <Link to='/'>
                     <img
                         className="logo"
                         src={logo}
@@ -26,21 +26,21 @@ const Header = () => {
                 </Link>
                 <nav className="nav">
                     <ul className="nav__list">
-                        <NavLink className="nav__item">
-                            <a className="nav__link" href="#">
+                        <li className="nav__item">
+                            <NavLink className="nav__link" href="#">
                                 Каталог
-                            </a>
-                        </NavLink>
-                        <NavLink className="nav__item">
-                            <a className="nav__link" href="#">
+                            </NavLink>
+                        </li>
+                        <li className="nav__item">
+                            <NavLink className="nav__link" href="#">
                                 Акції
-                            </a>
-                        </NavLink>
-                        <NavLink className="nav__item">
-                            <a className="nav__link" href="#">
+                            </NavLink>
+                        </li>
+                        <li className="nav__item">
+                            <NavLink className="nav__link" href="#">
                                 Підтримка
-                            </a>
-                        </NavLink>
+                            </NavLink>
+                        </li>
                     </ul>
                 </nav>
                 <div className="header__actions actions">

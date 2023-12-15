@@ -16,14 +16,14 @@ const reviewsArray = [
     {
       "id": 3,
       "reviewName": "Вассілісса Нимудра",
-      "reviewPictureURI": '../src/assets/img/slider-img.webp',
+      "reviewPictureURI": './slider-img.webp',
       "reviewStars": 2,
       "reviewText": 'Все фігня, не спадобалося😤'
     }, 
     {
       "id": 4,
       "reviewName": "Грибочок з-під верби",
-      "reviewPictureURI": '../../assets/img/slider-img.webp',
+      "reviewPictureURI": './slider-img.webp',
       "reviewStars": 1,
       "reviewText": '🍄🍄🍄🍄🍄🍄🍄'
     }, 

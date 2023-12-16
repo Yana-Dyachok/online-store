@@ -1,14 +1,26 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/colors';
 .bike-card {
+    padding: 0rem 1rem;
     // &__img {
     // }
 
     // &__name {
     // }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
 
     &__price {
         font-size: 2.7rem;
         color: $c-orange--500;
+    }
+    &__cart {
+        width: 3.8rem;
+        height: 3.8rem;
+        background: url('../../../assets/icons/icon-cart-on-card.svg') center no-repeat $c-orange--500;
+        border-radius: 1rem;
+        cursor: pointer;
     }
 }

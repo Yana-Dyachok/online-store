@@ -1,8 +1,11 @@
 @import '../../../../styles/_colors';
 
-.cart-goods {
-    display: flex;
-    justify-content: space-around;
+.order {
+    &__item {
+        display: flex;
+        justify-content: space-around;
+    }
+ 
     &__img {
         width: 19.6rem;
         height: 19.6rem;
@@ -13,8 +16,8 @@
         flex-direction: column;
     }
 
-    &__name {
-    }
+    // &__name {
+    // }
 
     &__price {
         color: $c-orange--800;
@@ -28,7 +31,7 @@
     }
 }
 
-.quantity-control {
+.quantity {
     display: flex;
     border-radius: 0.1rem;
    
@@ -42,6 +45,7 @@
         &--display {
             width: 10.8rem;
             text-align: center;
+            padding-top: 1rem;
             cursor: default;
         }
     }

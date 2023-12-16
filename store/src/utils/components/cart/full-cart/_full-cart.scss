@@ -1,0 +1,28 @@
+@import '../../../../styles/_mixins.scss';
+@import '../../../../styles/_colors.scss';
+@import '../../../../styles/_fonts.scss';
+
+.full-cart {
+ display: flex;
+ flex-direction: column;
+ gap: 4rem;
+    &__btns {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__btn {
+        padding: 1rem 3rem;
+
+        &--continue {
+            color: $c-orange--800;
+            border: 0.2rem solid $c-orange--800;
+        }
+    
+        &--order {
+            background-color: $c-orange--800;
+        }
+    }
+
+
+}

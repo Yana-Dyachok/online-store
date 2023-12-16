@@ -1,0 +1,48 @@
+@import '../../../../styles/_colors';
+
+.cart-goods {
+    display: flex;
+    justify-content: space-around;
+    &__img {
+        width: 19.6rem;
+        height: 19.6rem;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+    }
+
+    &__price {
+        color: $c-orange--800;
+    }
+
+    &__btn--del {
+        width: 2.8rem;
+        height: 3.2rem;
+        background-image: url('../../../../assets/icons/icon-delete.svg');
+        cursor: pointer;
+    }
+}
+
+.quantity-control {
+    display: flex;
+    border-radius: 0.1rem;
+   
+    &__item {
+        width: 5.2rem;
+        height: 5.2rem;
+        color: $c-brown--900;
+        border: 0.1rem  solid $c-gray--200;
+        cursor: pointer;
+      
+        &--display {
+            width: 10.8rem;
+            text-align: center;
+            cursor: default;
+        }
+    }
+}

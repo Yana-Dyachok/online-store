@@ -12,6 +12,7 @@ const OpenedCart = ({handleToggleCart}) => {
             <h2 className="cart__name title">Корзина</h2>
             {/* isCartEmpty? <EmptyCart handleToggleCart={handleToggleCart}/>:<FullCart/> */}
             <EmptyCart handleToggleCart={handleToggleCart}/>
+            {/* <FullCart/> */}
         </div>
     );
 };

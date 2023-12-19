@@ -1,21 +1,23 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
-import OpenedCart from '../cart/OpenedCart'
+import OpenedCart from '../cart/OpenedCart';
+import { useOrderArray } from '../OrderArray';
 
 import './_header.scss';
 import logo from '../../../assets/icons/logo.svg';
 
 const Header = () => {
+    const { orderArray, setOrderArray } = useOrderArray();
     const [isCartOpen, setIsCartOpen] = useState(false);
     const handleToggleCart = () => {
-      setIsCartOpen(!isCartOpen);
+        setIsCartOpen(!isCartOpen);
     };
 
     return (
         <header className="header">
             <div className="header__inner container">
-                <Link to='/'>
+                <Link to="/">
                     <img
                         className="logo"
                         src={logo}
@@ -50,10 +52,19 @@ const Header = () => {
                     ></button>
                     <button
                         className="actions__btn actions__btn--cart"
-                        type="button" onClick={handleToggleCart}
-                    ></button>
+                        type="button"
+                        onClick={handleToggleCart}
+                    >
+                        {orderArray.length > 0 ? (
+                            <div className="actions__count-order">
+                                {orderArray.length}
+                            </div>
+                        ) : null}
+                    </button>
                 </div>
-                {isCartOpen && <OpenedCart handleToggleCart={handleToggleCart}/>}
+                {isCartOpen && (
+                    <OpenedCart handleToggleCart={handleToggleCart} />
+                )}
             </div>
         </header>
     );

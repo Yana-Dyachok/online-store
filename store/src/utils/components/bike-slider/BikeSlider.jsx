@@ -4,12 +4,22 @@ import { Navigation } from 'swiper/modules';
 
 import BikeCard from '../bike-card/BikeCard';
 import bikes from '../../mockAPI/bike-data';
+import { useOrderArray } from '../OrderArray';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './_bike-slider.scss';
 
 const BikeSlider = () => {
+    const { orderArray, setOrderArray } = useOrderArray();
+
+    const addOrder = (item) => {
+        const isUnique = !orderArray.some((order) => order.id === item.id);
+        if (isUnique) {
+            setOrderArray((prevOrderArray) => [...prevOrderArray, item]);
+        }
+    };
+    
     // const [bikes, setBikes] = useState([]);
 
     // useEffect(() => {
@@ -37,7 +47,7 @@ const BikeSlider = () => {
                         type="button"
                     ></button>
                     <div className="bike-slider__container">
-                    <Swiper
+                        <Swiper
                             modules={[Navigation]}
                             navigation={{
                                 nextEl: '.bike-slider__btn--next',
@@ -51,18 +61,21 @@ const BikeSlider = () => {
                             {bikes.map((bike) => (
                                 <SwiperSlide key={bike.id}>
                                     <div className="bike-slider__item">
-                                        <BikeCard bike={bike} />
+                                        <BikeCard
+                                            bike={bike}
+                                            addOrder={addOrder}
+                                        />
                                     </div>
                                 </SwiperSlide>
                             ))}
-                    </Swiper>
+                        </Swiper>
                     </div>
                     <button
-                            className="bike-slider__btn bike-slider__btn--next"
-                            type="button"
-                        ></button>
+                        className="bike-slider__btn bike-slider__btn--next"
+                        type="button"
+                    ></button>
                 </div>
-            </div>                 
+            </div>
         </section>
     );
 };

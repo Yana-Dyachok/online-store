@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 
 import './_order-sum.scss';
-const OrderSum = () => {
+
+const OrderSum = ({totalSum}) => {
     const [discount, setDiscount] = useState(0);
-    const [totalSum, setTotalSum] = useState(0); 
-    return (
+    return (// таблицею чи чимось іншим?
       <table className="full-cart__sum order-sum">
         <tbody>
           <tr>

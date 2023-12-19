@@ -1,23 +1,30 @@
 @import '../../../../styles/_colors';
+@import '../../../../styles/_vars';
 
 .order {
     &__item {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 10.5rem;
+        padding-top: 4rem;
+        border-top: $gray-border;
     }
- 
+
     &__img {
         width: 19.6rem;
         height: 19.6rem;
     }
 
     &__info {
+        max-width: 32.4rem;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
     }
 
-    // &__name {
-    // }
+    &__name {
+    }
 
     &__price {
         color: $c-orange--800;
@@ -32,20 +39,25 @@
 }
 
 .quantity {
+    height: 5.2rem;
     display: flex;
     border-radius: 0.1rem;
-   
+    margin-right: 16rem;
+    border-radius: 1rem;
+    border: $gray-border;
+
     &__item {
         width: 5.2rem;
         height: 5.2rem;
         color: $c-brown--900;
-        border: 0.1rem  solid $c-gray--200;
         cursor: pointer;
-      
+
         &--display {
             width: 10.8rem;
             text-align: center;
             padding-top: 1rem;
+            border-left: $gray-border;
+            border-right: $gray-border;
             cursor: default;
         }
     }

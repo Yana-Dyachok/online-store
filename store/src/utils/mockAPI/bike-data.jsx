@@ -34,7 +34,7 @@ const Bikes=[
         "productPrice": 29963,
         "productImageUrl": "./bike-slider-item.webp",
         "amount": 1,
-        "discount": 0,
+        "discount": 25,
         "selected": false
       },
       {

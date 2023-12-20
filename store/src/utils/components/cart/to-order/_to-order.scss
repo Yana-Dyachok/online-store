@@ -3,16 +3,8 @@
 @import '../../../../styles/_fonts.scss';
 @import '../../../../styles/_vars';
 
+
 .full-cart {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    border-top: $gray-border;
-
-    &__container {
-       flex-direction: column;
-    }
-
     &__btns {
         display: flex;
         justify-content: space-between;

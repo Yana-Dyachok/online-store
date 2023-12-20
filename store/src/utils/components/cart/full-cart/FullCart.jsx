@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import OrderItem from '../order-item/OrderItem';
 import PromoCode from '../promo-code/PromoCode';
 import OrderSum from '../order-sum/OrderSum';
+import ToOrder from '../to-order/ToOrder';
 
 import './_full-cart.scss';
 const FullCart = ({ orderArray, setOrderArray }) => {
@@ -58,21 +59,10 @@ const FullCart = ({ orderArray, setOrderArray }) => {
                 changeAmount={changeAmount}
                 onDelete={onDelete}
             />
-            <PromoCode />
-            <OrderSum totalSum={totalSum} totalDiscount={totalDiscount} />
-            <div className="full-cart__btns">
-                <button
-                    className="full-cart__btn btn full-cart__btn--continue"
-                    type="button"
-                >
-                    Продовжити покупки
-                </button>
-                <button
-                    className="full-cart__btn btn full-cart__btn--order"
-                    type="button"
-                >
-                    Оформити замовлення
-                </button>
+            <div className='full-cart__container container'>
+                <PromoCode />
+                <OrderSum totalSum={totalSum} totalDiscount={totalDiscount} />
+                <ToOrder/>
             </div>
         </article>
     );

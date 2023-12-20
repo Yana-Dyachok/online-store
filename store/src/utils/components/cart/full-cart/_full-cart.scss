@@ -7,10 +7,12 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    padding-top: 4rem;
     border-top: $gray-border;
 
     &__container {
        flex-direction: column;
+       gap: 8rem;
     }
 
     &__btns {

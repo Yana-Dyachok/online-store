@@ -8,11 +8,11 @@ const OrderSum = ({totalSum, totalDiscount}) => {
         <tbody>
           <tr>
             <td className='order-sum__name' >Знижка:</td>
-            <td className='order-sum__discount'>{totalDiscount}грн</td>
+            <td className='order-sum__value order-sum__value--discount'>{totalDiscount}грн</td>
           </tr>
           <tr>
             <td className='order-sum__name'>Разом:</td>
-            <td className='order-sum__total'>{totalSum}грн</td>
+            <td className='order-sum__value order-sum__value--total'>{totalSum}грн</td>
           </tr>
         </tbody>
       </table>

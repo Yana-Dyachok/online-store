@@ -5,18 +5,22 @@
 .promo-code {
 display: flex;
 justify-content: space-between;
-padding: 4rem 8rem;
+align-items: baseline;
+gap: 7rem;
+padding: 4rem 0rem;
+
     // &__label {
     // }
 
     &__input {
-        padding: 1rem;
+        min-width: 41rem;
+        padding: 1.5rem 1rem;
         border-radius: 1rem;
         border: 0.1rem solid $c-gray--100;
     }
 
     &__btn {
-        padding: 1rem 3rem;
+        padding: 1.4rem 8rem;
         color: $c-orange--800;
         border: 0.2rem solid $c-orange--800;
     }

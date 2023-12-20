@@ -6,8 +6,8 @@ import OrderSum from '../order-sum/OrderSum';
 
 import './_full-cart.scss';
 const FullCart = ({ orderArray, setOrderArray }) => {
-    const [totalSum, setTotalSum] = useState(0); 
-
+    const [totalSum, setTotalSum] = useState(0);
+    const [totalDiscount, setTotalDiscount] = useState(0);
     const changeAmount = (item, d) => {
         const i = orderArray.indexOf(item);
         const tempArray = orderArray;
@@ -24,14 +24,31 @@ const FullCart = ({ orderArray, setOrderArray }) => {
         getTotalSum();
     };
 
+    const getDiscount = (item) =>
+        Math.floor(item.productPrice * (item.discount / 100)) * item.amount;
+
     const getTotalSum = () => {
         let sum = 0;
-        orderArray.map((item) => (sum += item.amount * item.productPrice));
+        orderArray.forEach((item) => {
+            let disc = getDiscount(item);
+            sum += item.amount * item.productPrice - disc;
+        });
         setTotalSum(sum);
     };
 
+    const getTotalDiscount = () => {
+        let sum = 0;
+        orderArray.forEach((item) => {
+            let discount = getDiscount(item);
+            sum += discount;
+        });
+        setTotalDiscount(sum);
+    };
+    console.log(totalDiscount);
+
     useEffect(() => {
         getTotalSum();
+        getTotalDiscount();
     });
 
     return (
@@ -42,7 +59,7 @@ const FullCart = ({ orderArray, setOrderArray }) => {
                 onDelete={onDelete}
             />
             <PromoCode />
-            <OrderSum totalSum={totalSum} />
+            <OrderSum totalSum={totalSum} totalDiscount={totalDiscount} />
             <div className="full-cart__btns">
                 <button
                     className="full-cart__btn btn full-cart__btn--continue"

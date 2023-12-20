@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './_bike-card.scss';
 
-const BikeCard = ({ bike, addOrder}) => {
-    const { productName, productPrice, productImageUrl} = bike;
+const BikeCard = ({ bike, addOrder }) => {
+    const { productName, productPrice, productImageUrl, discount } = bike;
     // const [isAddedToCart, setIsAddedToCart] = useState(false);
     return (
         <article className="bike-card">
@@ -15,11 +15,27 @@ const BikeCard = ({ bike, addOrder}) => {
             />
             <p className="bike-card__name">{productName}</p>
             <div className="bike-card__inner">
-                <p className="bike-card__price">{productPrice} грн</p>
+                <div className="bike-card__price price">
+                    {discount > 0 ? (
+                        <div className='price__inner'>
+                            <p className="price__to-discount">
+                                {productPrice}грн
+                            </p>
+                            <p className="price__discount-percentage">-{discount}%</p>
+                        </div>
+                    ) : null}
+                    <p className="price__after-discount">
+                        {discount > 0
+                            ? productPrice-Math.floor((productPrice * discount) / 100)
+                            : productPrice}грн
+                    </p>
+                </div>
                 <button
                     className="bike-card__cart"
                     type="button"
-                    onClick={()=>{addOrder(bike)}}
+                    onClick={() => {
+                        addOrder(bike);
+                    }}
                 ></button>
             </div>
         </article>

@@ -19,7 +19,7 @@
         max-width: 32.4rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         text-align: left;
     }
 
@@ -28,6 +28,10 @@
 
     &__price {
         color: $c-orange--800;
+        &--before {
+            font-size: 2rem;
+            text-decoration: line-through;
+        }
     }
 
     &__btn--del {

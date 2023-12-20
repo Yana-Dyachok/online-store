@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import './_order-item.scss';
 const OrderItem = ({ orderArray, changeAmount, onDelete}) => { 
+    const getPriceAfterDiscount=(order)=>{
+      return  (order.productPrice*order.amount-Math.floor((order.productPrice * order.discount) / 100)*order.amount)
+    }
 
     return (
         <>
@@ -15,7 +18,14 @@ const OrderItem = ({ orderArray, changeAmount, onDelete}) => {
                     />
                     <div className="order__info">
                         <p className="order__name">{order.productName}</p>
-                        <p className="order__price">{order.productPrice}грн</p>
+                        {order.discount > 0 ? (
+                            <p className="order__price  order__price--before">
+                                {order.productPrice*order.amount}грн
+                            </p>
+                    ) : null}
+                        <p className="order__price order__price--after">{order.discount > 0
+                            ? getPriceAfterDiscount(order)
+                            : order.productPrice*order.amount}грн</p>
                     </div>
                     <div className="order__quantity quantity">
                         <button

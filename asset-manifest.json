@@ -1,25 +1,21 @@
 {
   "files": {
-    "main.css": "/online-store/static/css/main.440212d5.css",
-    "main.js": "/online-store/static/js/main.c48fcf94.js",
+    "main.css": "/online-store/static/css/main.9070426d.css",
+    "main.js": "/online-store/static/js/main.d7429120.js",
     "static/media/logo.svg": "/online-store/static/media/logo.f340a775a648f1ad9df532f35a2e79b3.svg",
     "static/media/bike-builder.webp": "/online-store/static/media/bike-builder.deb0b1bbf35834d55d24.webp",
     "static/media/RobotoCondensed-Regular.woff": "/online-store/static/media/RobotoCondensed-Regular.25787041ddfe8df69d5d.woff",
     "static/media/RobotoSlab-Regular.woff": "/online-store/static/media/RobotoSlab-Regular.f767c6fa128d820e42c6.woff",
-    "static/media/OpenSans-SemiBold.woff": "/online-store/static/media/OpenSans-SemiBold.1232ba75e12556959958.woff",
-    "static/media/OpenSans-Regular.woff": "/online-store/static/media/OpenSans-Regular.74fbb1368a3029d9e39a.woff",
     "static/media/RobotoCondensed-Regular.woff2": "/online-store/static/media/RobotoCondensed-Regular.512246f3e4dd1aa9f3b6.woff2",
     "static/media/RobotoSlab-Regular.woff2": "/online-store/static/media/RobotoSlab-Regular.d1a730ed78aaa39b7bf2.woff2",
     "static/media/bike-hero.webp": "/online-store/static/media/bike-hero.d67f8034362aa69235f9.webp",
-    "static/media/Oswald-Medium.woff": "/online-store/static/media/Oswald-Medium.166fc0cd2df8b0b4bf59.woff",
-    "static/media/OpenSans-SemiBold.woff2": "/online-store/static/media/OpenSans-SemiBold.117298bec81d6c8250df.woff2",
     "static/media/KyivTypeSerif-Medium.woff": "/online-store/static/media/KyivTypeSerif-Medium.00b84817c63dcb986a9b.woff",
-    "static/media/OpenSans-Regular.woff2": "/online-store/static/media/OpenSans-Regular.9ffed65db527232e9a9d.woff2",
     "static/media/KyivTypeSerif-Medium.woff2": "/online-store/static/media/KyivTypeSerif-Medium.cbe88d46b0ff9c2472f3.woff2",
-    "static/media/Oswald-Medium.woff2": "/online-store/static/media/Oswald-Medium.287425c5cde9c5477b4c.woff2",
     "static/media/why-us-two.svg": "/online-store/static/media/why-us-two.6e025c5a37c6c6c60ae7.svg",
     "static/media/why-us-bike-img.webp": "/online-store/static/media/why-us-bike-img.7e38382f5f618656211b.webp",
     "static/media/master-card.svg": "/online-store/static/media/master-card.e35b910153731fe78153.svg",
+    "static/media/bike-slider-item.webp": "/online-store/static/media/bike-slider-item.a042d1cbf05739996030.webp",
+    "static/media/slider-img.webp": "/online-store/static/media/slider-img.f90d3ac389e68be6eb73.webp",
     "static/media/apple-pay.svg": "/online-store/static/media/apple-pay.1f45541a3b25f2bce6c8.svg",
     "static/media/why-us-four.svg": "/online-store/static/media/why-us-four.1473e65063dfaa181bcb.svg",
     "static/media/instagram.svg": "/online-store/static/media/instagram.26fee4764d12e5250ec9.svg",
@@ -27,9 +23,7 @@
     "static/media/why-us-one.svg": "/online-store/static/media/why-us-one.e4596eb07d748a245739.svg",
     "static/media/gmail.svg": "/online-store/static/media/gmail.218da2be849d23996e84.svg",
     "static/media/search.svg": "/online-store/static/media/search.9b81c3c3c4bdc3123bcc.svg",
-    "static/media/empty-shopping-cart.svg": "/online-store/static/media/empty-shopping-cart.8ab91c77a6be664f57ef.svg",
     "static/media/visa.svg": "/online-store/static/media/visa.6ed0ae11976dbce4df49.svg",
-    "static/media/icon-cart-on-card.svg": "/online-store/static/media/icon-cart-on-card.f39cecf2762013820f05.svg",
     "static/media/why-us-five.svg": "/online-store/static/media/why-us-five.b0bd6c3dd39cdae21e38.svg",
     "static/media/cart.svg": "/online-store/static/media/cart.9f1c0ec1cc20b5eaccee.svg",
     "static/media/slider-btn-prev.svg": "/online-store/static/media/slider-btn-prev.386247657b9198227e8a.svg",
@@ -37,15 +31,14 @@
     "static/media/telegram.svg": "/online-store/static/media/telegram.79c8567a266ca71fe426.svg",
     "static/media/why-us-three.svg": "/online-store/static/media/why-us-three.f3b10896e4af4a76388f.svg",
     "static/media/facebook.svg": "/online-store/static/media/facebook.00b7341fa314580bf161.svg",
-    "static/media/icon-delete.svg": "/online-store/static/media/icon-delete.bc1bec4f75c49a29a34c.svg",
     "static/media/why-us-six.svg": "/online-store/static/media/why-us-six.5811850917abb0d94e96.svg",
     "index.html": "/online-store/index.html",
     "static/media/star.svg": "/online-store/static/media/star.b018f2c142d109cd792e.svg",
-    "main.440212d5.css.map": "/online-store/static/css/main.440212d5.css.map",
-    "main.c48fcf94.js.map": "/online-store/static/js/main.c48fcf94.js.map"
+    "main.9070426d.css.map": "/online-store/static/css/main.9070426d.css.map",
+    "main.d7429120.js.map": "/online-store/static/js/main.d7429120.js.map"
   },
   "entrypoints": [
-    "static/css/main.440212d5.css",
-    "static/js/main.c48fcf94.js"
+    "static/css/main.9070426d.css",
+    "static/js/main.d7429120.js"
   ]
 }

@@ -14,6 +14,11 @@ const Header = () => {
         setIsCartOpen(!isCartOpen);
     };
 
+    const getAllQuantity = () => {
+        return orderArray.reduce((sum, order) => sum + order.amount, 0);
+      };
+      
+
     return (
         <header className="header">
             <div className="header__inner container">
@@ -57,7 +62,7 @@ const Header = () => {
                     >
                         {orderArray.length > 0 ? (
                             <div className="actions__count-order">
-                                {orderArray.length}
+                                {getAllQuantity()}
                             </div>
                         ) : null}
                     </button>

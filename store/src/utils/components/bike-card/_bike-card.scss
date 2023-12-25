@@ -12,20 +12,35 @@
         display: flex;
         justify-content: space-between;
         align-items: last baseline;
-        padding:1rem;
+        padding: 1rem;
     }
     &__name {
         padding: 0 1rem;
         font-size: 1.8rem;
     }
 
-    &__cart {
+    &__btn {
         width: 3.8rem;
         height: 3.8rem;
         background: url('../../../assets/icons/icon-cart-on-card.svg') center
             no-repeat $c-orange--800;
         border-radius: 1rem;
         cursor: pointer;
+        &--selected {
+            position: relative;
+            bottom: 2rem;
+        }
+    }
+
+    &__btn-mark {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        top: 0;
+        background: url('../../../assets/icons/checkmark-icon.svg') center
+            no-repeat $c-white;
+        border-radius: 50%;
+        border: 0.1rem solid $c-orange--800;
     }
 }
 

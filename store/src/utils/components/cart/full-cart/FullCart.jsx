@@ -18,9 +18,11 @@ const FullCart = ({ orderArray, setOrderArray }) => {
         setOrderArray([...tempArray]);
     };
 
-    const onDelete = (orderId) => {
-        setOrderArray((prevOrders) =>
-            prevOrders.filter((order) => order.id !== orderId)
+    const onDelete = (item) => {
+        setOrderArray((prevOrders) => {
+            item.amount = 0;
+            return prevOrders.filter((order) => order.id !== item.id)
+        }
         );
         getTotalSum();
     };
@@ -62,7 +64,7 @@ const FullCart = ({ orderArray, setOrderArray }) => {
             <div className='full-cart__container container'>
                 <PromoCode />
                 <OrderSum totalSum={totalSum} totalDiscount={totalDiscount} />
-                <ToOrder/>
+                <ToOrder />
             </div>
         </article>
     );

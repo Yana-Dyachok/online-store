@@ -16,7 +16,11 @@ const BikeSlider = () => {
     const addOrder = (item) => {
         const isUnique = !orderArray.some((order) => order.id === item.id);
         if (isUnique) {
-            setOrderArray((prevOrderArray) => [...prevOrderArray, item]);
+            setOrderArray((prevOrderArray) => {
+                item.amount = 1;
+                return [...prevOrderArray, item]
+            }
+            );
         }
     };
     

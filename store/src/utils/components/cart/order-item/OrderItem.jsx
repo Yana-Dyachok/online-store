@@ -54,7 +54,7 @@ const OrderItem = ({ orderArray, changeAmount, onDelete }) => {
                     <button
                         className="order__btn order__btn--del"
                         type="button"
-                        onClick={() => onDelete(order.id)}
+                        onClick={() => onDelete(order)}
                     ></button>
                 </article>
             ))}

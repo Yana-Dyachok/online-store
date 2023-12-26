@@ -46,6 +46,7 @@
         }
 
         &--cart {
+            position: relative;
             background: url('../../../assets/icons/cart.svg');
         }
     }
@@ -53,7 +54,8 @@
     &__count-order {
         width: 2.8rem;
         height: 2.8rem;
-        margin: -1rem 1rem 1rem 1.5rem;
+        position: absolute;
+        bottom: 1rem;
         font-size: 1.8rem;
         color: $c-white;
         background-color: $c-orange--800;

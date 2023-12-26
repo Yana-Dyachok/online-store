@@ -16,8 +16,7 @@ const Header = () => {
 
     const getAllQuantity = () => {
         return orderArray.reduce((sum, order) => sum + order.amount, 0);
-      };
-      
+    };
 
     return (
         <header className="header">
@@ -61,9 +60,9 @@ const Header = () => {
                         onClick={handleToggleCart}
                     >
                         {orderArray.length > 0 ? (
-                            <div className="actions__count-order">
+                            <span className="actions__count-order">
                                 {getAllQuantity()}
-                            </div>
+                            </span>
                         ) : null}
                     </button>
                 </div>

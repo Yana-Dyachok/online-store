@@ -11,7 +11,6 @@
     &__inner {
         display: flex;
         justify-content: space-between;
-        align-items: last baseline;
         padding: 1rem;
     }
     &__name {
@@ -26,9 +25,9 @@
             no-repeat $c-orange--800;
         border-radius: 1rem;
         cursor: pointer;
+
         &--selected {
             position: relative;
-            bottom: 2rem;
         }
     }
 

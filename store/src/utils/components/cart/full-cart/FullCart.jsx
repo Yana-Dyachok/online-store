@@ -22,7 +22,7 @@ const FullCart = ({ orderArray, setOrderArray }) => {
         const i = orderArray.indexOf(item);
         const tempArray = orderArray;
         const newAmount = parseInt(e.target.value, 10);
-        tempArray[i].amount = newAmount;
+        tempArray[i].amount = newAmount<101?newAmount:'';
         setOrderArray([...tempArray]);
     };
 
@@ -41,7 +41,7 @@ const FullCart = ({ orderArray, setOrderArray }) => {
     };
 
     const getDiscount = (item) =>
-        Math.floor(item.productPrice * (item.discount / 100)) * (item.amount||1);
+    Math.round(item.productPrice * (item.discount / 100)) * (item.amount||1);
 
     const getTotalSum = () => {
         let sum = 0;

@@ -48,7 +48,7 @@ const OrderItem = ({
                             onClick={() => changeAmount(order, 1)}
                         ></button>
                         <input
-                            className={`quantity__input ${order.amount < 1||isNaN(order.amount)? 'quantity__input--incorrect' : ''}`}
+                            className={`quantity__input ${order.amount < 1||order.amount > 101||isNaN(order.amount)? 'quantity__input--incorrect' : ''}`}
                             type="number"
                             value={order.amount}
                             onInput={(e) => inputAmountChange(e, order)}

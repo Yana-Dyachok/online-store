@@ -11,6 +11,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+        align-items: last baseline;
         padding: 1rem;
     }
     &__name {
@@ -27,19 +28,10 @@
         cursor: pointer;
 
         &--selected {
-            position: relative;
-        }
-    }
-
-    &__btn-mark {
-        width: 2rem;
-        height: 2rem;
-        position: absolute;
-        top: 0;
-        background: url('../../../assets/icons/checkmark-icon.svg') center
+            background: url('../../../assets/icons/add_shopping_cart.svg') center
             no-repeat $c-white;
-        border-radius: 50%;
-        border: 0.1rem solid $c-orange--800;
+           border: 0.1rem solid $c-orange--800;
+        }
     }
 }
 

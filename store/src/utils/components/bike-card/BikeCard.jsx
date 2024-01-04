@@ -1,10 +1,15 @@
 import { useState } from 'react';
+import { NavLink, Link, useNavigate } from 'react-router-dom';
 import './_bike-card.scss';
 
 const BikeCard = ({ bike, addOrder }) => {
     const { productName, productPrice, productImageUrl, amount, discount } =
         bike;
-    // const [isAddedToCart, setIsAddedToCart] = useState(false);
+    const navigate = useNavigate();
+
+    const handleOpenCart = () => {
+        navigate('/cart');
+    };
     return (
         <article className="bike-card">
             <img
@@ -47,10 +52,8 @@ const BikeCard = ({ bike, addOrder }) => {
                     <button
                         className="bike-card__btn bike-card__btn--selected"
                         type="button"
-                        // onClick={handleToggleCart}
-                    >
-                        <span className="bike-card__btn-mark"></span>
-                    </button>
+                        onClick={handleOpenCart}
+                    ></button>
                 )}
             </div>
         </article>

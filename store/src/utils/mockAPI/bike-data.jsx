@@ -6,9 +6,7 @@ const Bikes=[
         "productImageUrl": "./bike-slider-item.webp",
          "amount": 0,
         "discount": 0,
-        "selected": false,
-        "discount": 0,
-        "selected": false
+        "discount": 0
       }, 
       {
         "id": 2,
@@ -16,8 +14,7 @@ const Bikes=[
         "productPrice": 10774,
         "productImageUrl": "./bike-slider-item.webp",
          "amount": 0,
-        "discount": 30,
-        "selected": false
+        "discount": 30
       },
       {
         "id": 3, 
@@ -25,8 +22,7 @@ const Bikes=[
         "productPrice": 17854,
         "productImageUrl": "./bike-slider-item.webp",
         "amount": 0,
-        "discount": 0,
-        "selected": false
+        "discount": 0
       },
       {
         "id": 4,
@@ -34,8 +30,7 @@ const Bikes=[
         "productPrice": 29963,
         "productImageUrl": "./bike-slider-item.webp",
          "amount": 0,
-        "discount": 25,
-        "selected": false
+        "discount": 25
       },
       {
         "id": 5,
@@ -43,8 +38,7 @@ const Bikes=[
         "productPrice": 15934,
         "productImageUrl": "./bike-slider-item.webp",
          "amount": 0,
-        "discount": 0,
-        "selected": false
+        "discount": 0
       },
       {
         "id": 6,
@@ -52,8 +46,7 @@ const Bikes=[
         "productPrice": 15934,
         "productImageUrl": "./bike-slider-item.webp",
          "amount": 0,
-        "discount": 0,
-        "selected": false
+        "discount": 0
       },
       {
         "id": 7,
@@ -61,8 +54,7 @@ const Bikes=[
         "productPrice": 15934,
         "productImageUrl": "./bike-slider-item.webp",
          "amount": 0,
-        "discount": 10,
-        "selected": false
+        "discount": 10
       },
       {
         "id": 8,
@@ -70,8 +62,7 @@ const Bikes=[
         "productPrice": 15934,
         "productImageUrl": "./bike-slider-item.webp",
          "amount": 0,
-        "discount": 0,
-        "selected": false
+        "discount": 0
       }
     ]
     export default Bikes;

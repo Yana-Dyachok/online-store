@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, useNavigate } from 'react-router-dom';
 
-import OpenedCart from '../cart/OpenedCart';
 import { useOrderArray } from '../OrderArray';
 
 import './_header.scss';
@@ -9,13 +8,13 @@ import logo from '../../../assets/icons/logo.svg';
 
 const Header = () => {
     const { orderArray, setOrderArray } = useOrderArray();
-    const [isCartOpen, setIsCartOpen] = useState(false);
-    const handleToggleCart = () => {
-        setIsCartOpen(!isCartOpen);
-    };
-
     const getAllQuantity = () => {
-        return orderArray.reduce((sum, order) => sum + order.amount, 0);
+        return orderArray.reduce((sum, order) => sum + (order.amount||1), 0);
+    };
+    const navigate = useNavigate();
+ 
+    const handleOpenCart = () => {
+        navigate('/cart');
     };
 
     return (
@@ -57,7 +56,7 @@ const Header = () => {
                     <button
                         className="actions__btn actions__btn--cart"
                         type="button"
-                        onClick={handleToggleCart}
+                        onClick={handleOpenCart}
                     >
                         {orderArray.length > 0 ? (
                             <span className="actions__count-order">
@@ -66,9 +65,6 @@ const Header = () => {
                         ) : null}
                     </button>
                 </div>
-                {isCartOpen && (
-                    <OpenedCart handleToggleCart={handleToggleCart} />
-                )}
             </div>
         </header>
     );

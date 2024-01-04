@@ -18,23 +18,36 @@ const FullCart = ({ orderArray, setOrderArray }) => {
         setOrderArray([...tempArray]);
     };
 
+    const inputAmountChange = (e, item) => {
+        const i = orderArray.indexOf(item);
+        const tempArray = orderArray;
+        const newAmount = parseInt(e.target.value, 10);
+        tempArray[i].amount = newAmount;
+        setOrderArray([...tempArray]);
+    };
+
+    const inputBlur = (e, item) => {
+        if (e.target.value.trim() === '' || e.target.value < 1) {
+            inputAmountChange({ target: { value: '1' } }, item);
+        }
+    };
+
     const onDelete = (item) => {
         setOrderArray((prevOrders) => {
             item.amount = 0;
-            return prevOrders.filter((order) => order.id !== item.id)
-        }
-        );
+            return prevOrders.filter((order) => order.id !== item.id);
+        });
         getTotalSum();
     };
 
     const getDiscount = (item) =>
-        Math.floor(item.productPrice * (item.discount / 100)) * item.amount;
+        Math.floor(item.productPrice * (item.discount / 100)) * (item.amount||1);
 
     const getTotalSum = () => {
         let sum = 0;
         orderArray.forEach((item) => {
             let disc = getDiscount(item);
-            sum += item.amount * item.productPrice - disc;
+            sum += (item.amount||1) * item.productPrice - disc;
         });
         setTotalSum(sum);
     };
@@ -58,10 +71,12 @@ const FullCart = ({ orderArray, setOrderArray }) => {
         <article className="full-cart">
             <OrderItem
                 orderArray={orderArray}
+                inputAmountChange={inputAmountChange}
+                inputBlur={inputBlur}
                 changeAmount={changeAmount}
                 onDelete={onDelete}
             />
-            <div className='full-cart__container container'>
+            <div className="full-cart__container container">
                 <PromoCode />
                 <OrderSum totalSum={totalSum} totalDiscount={totalDiscount} />
                 <ToOrder />

@@ -6,7 +6,7 @@ import FullCart from './full-cart/FullCart';
 
 import './_opened-cart.scss';
 
-const OpenedCart = ({handleToggleCart}) => {
+const OpenedCart = () => {
     const { orderArray, setOrderArray } = useOrderArray();
     const [isCartEmpty, setIsCartEmpty] = useState(true);
     useEffect(() => {
@@ -16,7 +16,7 @@ const OpenedCart = ({handleToggleCart}) => {
     return (
         <div className="cart container">
             <h2 className="cart__name title">Кошик</h2>
-           {isCartEmpty?<EmptyCart handleToggleCart={handleToggleCart}/>:<FullCart orderArray={orderArray} setOrderArray={setOrderArray} />}
+           {isCartEmpty?<EmptyCart/>:<FullCart orderArray={orderArray} setOrderArray={setOrderArray} />}
         </div>
     );
 };

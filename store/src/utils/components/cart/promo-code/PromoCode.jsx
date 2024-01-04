@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import './_promo-code.scss';
 
@@ -10,22 +10,30 @@ const PromoCode = () => {
     };
   
     const handleApply = (e) => {
-      e.preventDefault();
-      console.log(promoCode);//??
+      e.preventDefault(); 
+      console.log(promoCode);
     };
+
     return (
         <form
             className="full-cart__promo-code promo-code"
+            onSubmit={handleApply}
         >
             <label className='promo-code__label' htmlFor="promo-code-input">Промокод:</label>
-            <input className='promo-code__input'
+            <input
+                className='promo-code__input'
                 type="text"
                 id="promo-code-input"
-                placeholder="Введіть промокод" // треба додати
+                placeholder="Введіть промокод"
                 value={promoCode}
                 onChange={handleInputChange}
             />
-            <button className='promo-code__btn btn' type="submit" onSubmit={handleApply}>Застосувати</button>
+            <button
+                className='promo-code__btn btn'
+                type="submit" 
+            >
+                Застосувати
+            </button>
         </form>
     );
 };

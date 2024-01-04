@@ -77,7 +77,7 @@ const FullCart = ({ orderArray, setOrderArray }) => {
                 onDelete={onDelete}
             />
             <div className="full-cart__container container">
-                <PromoCode />
+                <PromoCode/>
                 <OrderSum totalSum={totalSum} totalDiscount={totalDiscount} />
                 <ToOrder />
             </div>
